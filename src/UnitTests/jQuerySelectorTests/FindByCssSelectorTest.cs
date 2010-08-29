@@ -33,7 +33,7 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
             Browser.FindByCssSelector<TextField>("#main form input[title='Google Search']").TypeText("watin");
             Browser.FindByCssSelector<Element>("#main input[type='submit'][value='Google Search']").Click();
 
-            Browser.FindByCssSelector<Element>(":contains('WatiN Home')");
+            Browser.FindByCssSelector<Element>(":contains('WatiN Home')").WaitUntilExists();
         }
     }
 }
