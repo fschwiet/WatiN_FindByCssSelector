@@ -2,7 +2,7 @@ I branched WatiN to try to add support for Browser.Element(Find.ByCssSelector(cs
 
 The original WatiN can be found at http://watin.sourceforge.net/.
 
-All new tests are passing.  Usage is not as clean, here is a sample of what is now supported (from FindByCssSelectorTest.cs):
+All new tests are passing.  Here is a sample of what is now supported (from FindByCssSelectorTest.cs):
 
 
             Browser.GoTo("http://google.com/");
