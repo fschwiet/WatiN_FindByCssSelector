@@ -491,6 +491,7 @@
     </Compile>
     <Compile Include="StaticElementFinder.cs" />
     <Compile Include="UtilityClasses\EmptyArray.cs" />
+    <Compile Include="UtilityClasses\JavascriptStringEncoder.cs" />
     <Compile Include="UtilityClasses\LazyList.cs" />
     <Compile Include="UtilityClasses\VariableNameHelper.cs" />
     <Compile Include="WaitForCompleteBase.cs" />

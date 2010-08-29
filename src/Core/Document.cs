@@ -429,7 +429,7 @@ namespace WatiN.Core
 
 			var exprWithAssignment = resultVar + " = '';" + errorVar + " = '';"
                                         + "try {"
-			                            +  resultVar + " = String(eval('" + javaScriptCode.Replace("'", "\\'") + "'))"
+			                            +  resultVar + " = String(eval(" + JavascriptStringEncoder.Encode(javaScriptCode) + "))"
 			                            + "} catch (error) {"
                                         + errorVar + " = 'message' in error ? error.name + ': ' + error.message : String(error)"
 			                            + "};";
