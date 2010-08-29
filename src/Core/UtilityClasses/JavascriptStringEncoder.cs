@@ -22,6 +22,14 @@ namespace WatiN.Core.UtilityClasses
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("\"");
+            JsonStringEncodeWithinDoubleParenthesis(sb, s);
+            sb.Append("\"");
+
+            return sb.ToString();
+        }
+
+        public static void JsonStringEncodeWithinDoubleParenthesis(StringBuilder sb, string s)
+        {
             foreach (char c in s)
             {
                 switch (c)
@@ -63,9 +71,6 @@ namespace WatiN.Core.UtilityClasses
                         break;
                 }
             }
-            sb.Append("\"");
-
-            return sb.ToString();
         }
     }
 }

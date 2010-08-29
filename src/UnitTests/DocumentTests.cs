@@ -17,6 +17,7 @@
 #endregion Copyright
 
 using System;
+using System.Text;
 using System.Text.RegularExpressions;
 using Moq;
 using NUnit.Framework;
@@ -175,6 +176,33 @@ namespace WatiN.Core.UnitTests
 		                        Assert.AreEqual("5", result);
 		                    });
 		}
+
+        [Test]
+        public void RunLargeScriptAndEval()
+        {
+            int expectedMyVal = Some.Integer();
+
+            int spamCount = 500000;
+
+            string spamString = "s = 123;";
+
+            StringBuilder longScript = new StringBuilder(spamString.Length * spamCount + 20);
+            longScript.Append("(function(s) {");
+
+            for (int i = 0; i < spamCount; i++)
+                longScript.Append(spamString);
+
+            longScript.Append("})(123); var myVar = " + expectedMyVal + ";");
+
+            Console.WriteLine("Running script of length: " + longScript.ToString().Length);
+
+            ExecuteTest(browser =>
+            {
+                browser.RunScript(longScript.ToString());
+                var result = browser.Eval("myVar;");
+                Assert.AreEqual(expectedMyVal.ToString(), result);
+            });
+        }
 
         [Test]
         public void ContainsText()

@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using Moq;
 
-namespace WatiN.Core.UnitTests.jQuerySelectorTests
+namespace WatiN.Core.UnitTests
 {
     public class Some
     {

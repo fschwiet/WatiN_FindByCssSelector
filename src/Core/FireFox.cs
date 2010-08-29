@@ -55,7 +55,7 @@ namespace WatiN.Core
         /// Initializes a new instance of the <see cref="FireFox"/> class.
         /// </summary>
         /// <param name="uri">The url to go to</param>
-        public FireFox(Uri uri) 
+        public FireFox(Uri uri)
         {
             CreateFireFoxInstance(uri.AbsoluteUri);
         }
@@ -63,6 +63,11 @@ namespace WatiN.Core
         public FireFox(FFBrowser ffBrowser)
         {
             _ffBrowser = ffBrowser;
+        }
+
+        public override int RunScriptMaxChunk
+        {
+            get { return 20000; } // A 100037 char script was observed passing on FF 3.6.8
         }
 
         /// <summary>

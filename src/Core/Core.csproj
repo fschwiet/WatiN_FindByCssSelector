@@ -691,7 +691,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Constraints\jQuerySelector\Resources\loadJQuery.js" />
+    <EmbeddedResource Include="Constraints\jQuerySelector\Resources\jquery-1.4.2.js" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

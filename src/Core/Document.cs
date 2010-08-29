@@ -18,6 +18,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Text.RegularExpressions;
 using WatiN.Core.Constraints;
 using WatiN.Core.Exceptions;
@@ -59,6 +60,11 @@ namespace WatiN.Core
         public const string ERROR_PROPERTY_NAME = "watinExpressionError";
 
         private DomContainer domContainer;
+
+		public virtual int RunScriptMaxChunk
+		{
+			get { return int.MaxValue; } 
+		}
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Document"/> class.
@@ -390,9 +396,52 @@ namespace WatiN.Core
 		/// Runs the javascript code in IE.
 		/// </summary>
 		/// <param name="javaScriptCode">The javascript code.</param>
-        public virtual void RunScript(string javaScriptCode)
+		public virtual void RunScript(string javaScriptCode)
 		{
-			RunScript(javaScriptCode, "javascript");
+			if (javaScriptCode.Length > this.RunScriptMaxChunk)
+			{
+				RunScript("_watinChunkJS='';");
+
+				const string head = "_watinChunkJS+=\"";
+				const string tail = "\";";
+
+				const int insertSize = 1024;
+				const int worstCaseEncodingLengthOfInsert = 1024 * 6;
+
+				StringBuilder scriptChunk = new StringBuilder();
+
+				int maxSizeToInsertInto = this.RunScriptMaxChunk - worstCaseEncodingLengthOfInsert - tail.Length;
+
+				int stringPosition = 0;
+
+				while (stringPosition < javaScriptCode.Length)
+				{
+					scriptChunk.Append(head);
+
+					while (scriptChunk.Length < maxSizeToInsertInto
+						   && stringPosition < javaScriptCode.Length)
+					{
+						int amountToWrite = Math.Min(insertSize, javaScriptCode.Length - stringPosition);
+
+						JavascriptStringEncoder.JsonStringEncodeWithinDoubleParenthesis(scriptChunk,
+																						javaScriptCode.Substring( stringPosition, amountToWrite));
+
+						stringPosition += amountToWrite;
+					}
+
+					scriptChunk.Append(tail);
+
+					RunScript(scriptChunk.ToString(), "javascript");
+
+					scriptChunk.Length = 0;
+				}
+
+				RunScript("eval(_watinChunkJS);_watinChunkJS=null;", "javascript");
+			}
+			else
+			{
+				RunScript(javaScriptCode, "javascript");
+			}
 		}
 
 		/// <summary>

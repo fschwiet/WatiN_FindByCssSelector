@@ -331,11 +331,13 @@ namespace WatiN.Core.Native.Mozilla
             if (Process == null) return;
             
             Process.WaitForExit(5000);
-            
-            if (Process == null || Process.HasExited) return;
-            
+
             Logger.LogDebug("Killing FireFox process");
-            UtilityClass.TryActionIgnoreException(() => Process.Kill());
+            UtilityClass.TryActionIgnoreException(() =>
+              {
+                  if (Process == null || Process.HasExited) return;
+                  Process.Kill();
+              });
         }
 
         public void CloseConnection()

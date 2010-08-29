@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.IO;
+using System.Text;
 using WatiN.Core.UtilityClasses;
 
 namespace WatiN.Core.Constraints.jQuerySelector
@@ -26,7 +27,17 @@ namespace WatiN.Core.Constraints.jQuerySelector
 
         public string GetJQueryInstallScript()
         {
-            return LoadResourceByName("loadJQuery.js");
+            StringBuilder result = new StringBuilder();
+
+            result.Append("with(window) { if (typeof jQuery == 'undefined') {");
+
+            string jQuery = LoadResourceByName("jquery-1.4.2.js");
+
+            result.Append(jQuery);
+
+            result.Append("};};");
+
+            return result.ToString(); 
         }
 
         public string GetCssMarkingScript(string cssSelector, string markerClass)
