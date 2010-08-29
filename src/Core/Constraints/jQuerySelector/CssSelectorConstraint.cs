@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using FindByCss;
 using WatiN.Core.Interfaces;
 
 namespace WatiN.Core.Constraints.jQuerySelector

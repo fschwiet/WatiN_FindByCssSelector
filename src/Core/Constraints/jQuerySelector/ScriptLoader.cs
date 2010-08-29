@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Reflection;
+﻿using System.Reflection;
 using System.IO;
 using WatiN.Core.UtilityClasses;
 
-namespace FindByCss
+namespace WatiN.Core.Constraints.jQuerySelector
 {
     public interface IScriptLoader
     {

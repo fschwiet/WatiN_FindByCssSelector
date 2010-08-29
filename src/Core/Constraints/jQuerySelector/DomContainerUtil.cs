@@ -1,6 +1,4 @@
-﻿using FindByCss;
-
-namespace WatiN.Core.Constraints.jQuerySelector
+﻿namespace WatiN.Core.Constraints.jQuerySelector
 {
     public static class DomContainerUtil
     {
