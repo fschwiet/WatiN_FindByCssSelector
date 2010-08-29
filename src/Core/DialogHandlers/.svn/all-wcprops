@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/1112/trunk/src/Core/DialogHandlers
+END
+ConfirmDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/ConfirmDialogHandler.cs
+END
+DialogWatcher.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/1107/trunk/src/Core/DialogHandlers/DialogWatcher.cs
+END
+SecurityAlertDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/SecurityAlertDialogHandler.cs
+END
+WaitUntilHandledDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/WaitUntilHandledDialogHandler.cs
+END
+UseDialogOnce.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/UseDialogOnce.cs
+END
+FileDownloadOptionEnum.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/FileDownloadOptionEnum.cs
+END
+AlertDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/AlertDialogHandler.cs
+END
+AlertAndConfirmDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/AlertAndConfirmDialogHandler.cs
+END
+BaseDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/1107/trunk/src/Core/DialogHandlers/BaseDialogHandler.cs
+END
+VbScriptMsgBoxDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/VbScriptMsgBoxDialogHandler.cs
+END
+LogonDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/1110/trunk/src/Core/DialogHandlers/LogonDialogHandler.cs
+END
+DialogHandlerHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/DialogHandlerHelper.cs
+END
+ReturnDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/ReturnDialogHandler.cs
+END
+PromptDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/PromptDialogHandler.cs
+END
+JavaDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/JavaDialogHandler.cs
+END
+CloseIEDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/CloseIEDialogHandler.cs
+END
+RefreshWarningDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/RefreshWarningDialogHandler.cs
+END
+FileUploadDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/watin/!svn/ver/1112/trunk/src/Core/DialogHandlers/FileUploadDialogHandler.cs
+END
+FileDownloadHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/FileDownloadHandler.cs
+END
+CertificateWarningHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/CertificateWarningHandler.cs
+END
+SimpleJavaDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/SimpleJavaDialogHandler.cs
+END
+PrintDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DialogHandlers/PrintDialogHandler.cs
+END

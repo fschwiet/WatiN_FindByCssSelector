@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/watin/!svn/ver/681/trunk/src/Installer
+END
+Setup.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/681/trunk/src/Installer/Setup.wxs
+END
+WatiN.setup.wixproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/336/trunk/src/Installer/WatiN.setup.wixproj
+END
+files.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/681/trunk/src/Installer/files.wxs
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/379/trunk/src/Installer/TODO.txt
+END
+License.rtf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/watin/!svn/ver/385/trunk/src/Installer/License.rtf
+END
+WatiN.setup.sln
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/334/trunk/src/Installer/WatiN.setup.sln
+END

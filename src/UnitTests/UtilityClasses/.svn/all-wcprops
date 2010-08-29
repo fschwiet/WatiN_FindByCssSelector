@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1109/trunk/src/UnitTests/UtilityClasses
+END
+UtilityClassTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/UtilityClasses/UtilityClassTests.cs
+END
+LazyListTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/UtilityClasses/LazyListTests.cs
+END
+TryActionUntilTimeOutTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/UtilityClasses/TryActionUntilTimeOutTests.cs
+END
+CaptureWebPageToFileTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/watin/!svn/ver/1109/trunk/src/UnitTests/UtilityClasses/CaptureWebPageToFileTests.cs
+END

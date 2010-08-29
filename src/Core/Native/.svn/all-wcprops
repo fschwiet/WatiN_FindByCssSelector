@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native
+END
+JSBrowserBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/JSBrowserBase.cs
+END
+ClientPortBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/ClientPortBase.cs
+END
+EmptyElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/EmptyElementCollection.cs
+END
+JSElementArray.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/JSElementArray.cs
+END
+INativeElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/INativeElementCollection.cs
+END
+JSElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/JSElement.cs
+END
+IClientPort.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/IClientPort.cs
+END
+JSUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/JSUtils.cs
+END
+JSElementCollectionBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/JSElementCollectionBase.cs
+END
+INativeDocument.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/INativeDocument.cs
+END
+JavaScriptEngineType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/JavaScriptEngineType.cs
+END
+JSWaitForComplete.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/JSWaitForComplete.cs
+END
+INativeBrowser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/INativeBrowser.cs
+END
+IHwnd.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/IHwnd.cs
+END
+INativeElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/INativeElement.cs
+END

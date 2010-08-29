@@ -1,0 +1,58 @@
+10
+
+dir
+1113
+https://watin.svn.sourceforge.net/svnroot/watin/trunk/tools
+https://watin.svn.sourceforge.net/svnroot/watin
+
+
+
+2010-01-29T15:37:29.049630Z
+1099
+jvmenen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dce54b78-4db9-4644-8283-22596d51490d
+
+NAnt
+dir
+
+NCoverExplorerExtras
+dir
+
+NDoc2
+dir
+
+Mozilla
+dir
+
+WiX
+dir
+
+ReSharper
+dir
+
+Moq
+dir
+
+NCover
+dir
+
+NCoverExplorer
+dir
+
+NUnit
+dir
+

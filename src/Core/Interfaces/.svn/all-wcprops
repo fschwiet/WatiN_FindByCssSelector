@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces
+END
+IWait.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces/IWait.cs
+END
+IAttachTo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces/IAttachTo.cs
+END
+IFindByDefaultFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces/IFindByDefaultFactory.cs
+END
+IAttributeBag.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces/IAttributeBag.cs
+END
+IDialogHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces/IDialogHandler.cs
+END
+IComponentCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces/IComponentCollection.cs
+END
+ILogWriter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces/ILogWriter.cs
+END
+ISettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Interfaces/ISettings.cs
+END

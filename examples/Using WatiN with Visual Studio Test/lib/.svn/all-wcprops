@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/watin/!svn/ver/1091/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/lib
+END
+WatiN.Core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/watin/!svn/ver/1091/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/lib/WatiN.Core.dll
+END
+Interop.SHDocVw.dll
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/watin/!svn/ver/931/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/lib/Interop.SHDocVw.dll
+END
+WatiN.Core.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/watin/!svn/ver/1091/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/lib/WatiN.Core.xml
+END

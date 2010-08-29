@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer
+END
+IWebBrowser2Processor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/IWebBrowser2Processor.cs
+END
+WinInet.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/WinInet.cs
+END
+FrameByIndexProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/FrameByIndexProcessor.cs
+END
+IEUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/IEUtils.cs
+END
+IEWaitForComplete.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/IEWaitForComplete.cs
+END
+IEElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/IEElementCollection.cs
+END
+AttachToIeHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/AttachToIeHelper.cs
+END
+IEDocument.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/IEDocument.cs
+END
+AsyncScriptRunner.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/AsyncScriptRunner.cs
+END
+IEBrowser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/IEBrowser.cs
+END
+IEFireEventHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/IEFireEventHandler.cs
+END
+FrameCountProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/FrameCountProcessor.cs
+END
+ShellWindows2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/ShellWindows2.cs
+END
+AllFramesProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/AllFramesProcessor.cs
+END
+IEElement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/InternetExplorer/IEElement.cs
+END

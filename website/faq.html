@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org" />
+    <title>
+      WatiN FAQ
+    </title>
+    <meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema" />
+    <meta content="watin, test, C#, web, .Net, framework, html, dom, watir" name="Keywords" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta content="Global" name="Distribution" />
+    <meta content="Jeroen van Menen" name="Author" />
+    <meta content="index,follow" name="Robots" />
+    <link href="images/BrightSide.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- wrap starts here -->
+    <div id="wrap">
+      <div id="header">
+        <h1 id="logo">
+          <span class="green"><font color="#6297BC">WatiN</font></span>
+        </h1>
+        <h2 id="slogan">
+          Web Application Testing In .Net
+        </h2>
+        <form class="searchform" action="#" method="post">
+          <p>
+ <input class="button" type="submit" value="Search" name="search" />
+          </p>
+        </form><!-- Menu Tabs -->
+        <ul>
+          <li>
+            <a href="index.html"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="http://sourceforge.net/project/showfiles.php?group_id=167632"><span>Downloads</span></a>
+          </li>
+          <li id="current">
+            <a href="documentation.html"><span>Documentation</span></a>
+          </li>
+          <li>
+            <a href="contribute.html"><span>Contribute</span></a>
+          </li>
+          <li>
+            <a href="support.html"><span>Support</span></a>
+          </li>
+          <li>
+            <a href="team.html"><span>Team</span></a>
+          </li>
+        </ul>
+      </div><!-- content-wrap starts here -->
+      <div id="content-wrap">
+        <div id="main">
+          <h1>
+            Frequently <span class="green">Asked</span> <span class="gray">Questions</span>
+          </h1>
+          <p>
+            Following are some frequently asked questions about WatiN
+          </p><br />
+          <p>
+            <strong>Which versions of Internet Explorer are supported?</strong>
+          </p>
+          <p>
+            Internet Explorer 6, 7 and Internet Explorer 8.
+          </p><br />
+          <p>
+            <strong>Which windows versions are supported?</strong>
+          </p>
+          <p>
+            Windows 2000, Windows XP, Windows 2003 and Windows 2008. 
+          </p>
+          <p>
+			Using WatiN on Vista and Windows 2008 needs a little extra work due to the Protected Mode. You need to add the domain of the website undertest to the trusted sites list.
+			This will turn Protected mode off for your site and your WatiN tests will run properly. Thanks to James Kovacs for this info.
+          </p>
+          <p>
+			For more info visit <a href="http://www.jameskovacs.com/blog/RunningWatiNTestsOnVista.aspx" target="_blank">http://www.jameskovacs.com/blog/RunningWatiNTestsOnVista.aspx</a>
+          </p><br />
+          <p>
+            <strong>Are you planning to support FireFox?</strong>
+          </p>
+          <p>
+            Yes, a <a href="firefox.html">CTP version of WatiN 2.0</a> with support for running tests with FireFox 2.x and 3.x is available. We plan on releasing the first beta at the end of Q1 2009.
+          </p><br />
+          <p>
+            <strong>Will there be a recorder for WatiN scripts?</strong>
+          </p>
+          <p>
+            WatiN Test recorder is the most advanced recorder currently available for WatiN. It is developed by Daaron Dwyer and you can find the project at <a href="http://watintestrecord.sourceforge.net" target="_blank">http://watintestrecord.sourceforge.net</a>
+          </p><br />
+          <p>
+            <strong>Can I use WatiN with FitNesse?</strong>
+          </p>
+          <p>
+            Yes, Jeff Parker has created <a href="http://sourceforge.net/projects/watinfixture" target="_blank">WatiNFixture</a> but you can also use WatiN in your own fixture code. Read the <a href="http://sourceforge.net/docman/?group_id=181273" target="_blank">WatiNFixture Setup guide</a> on how to change the FitNesse.Net server code. It needs to run in a Single Threaded Apartmentstate (<a href="apartmentstateinfo.html">STA</a>) to make it work with WatiN.
+          </p><br />
+          <p>
+            <strong>Will you keep support for the .Net Framework 1.1?</strong>
+          </p>
+          <p>
+            No. As of WatiN 2.0 only .Net 2.0 and higher will be supported. WatiN 1.3.x will stay available for people using .Net 1.1.
+          </p><br />
+          <p>
+            <strong>I get a ThreadStateException. Whats wrong?</strong>
+          </p>
+          <p>
+            Make sure the thread your code is running in a single threaded apartment (STA) thread. For more information on this subject read <a href="apartmentstateinfo.html">this article</a>.
+          </p><br />
+          <p>
+            <strong>Can I help in anyway?</strong>
+          </p>
+          <p>
+            Yes! WatiN is an open source project so your contribution is highly appreciated. Read more on options to contribute <a href="contribute.html">here</a>.
+          </p><br />
+          <p>
+            <strong>Under which open source license is this project distributed?</strong>
+          </p>
+          <p>
+            WatiN 1.0.0.400 and higher use the Apache License 2.0. See <a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a> for the full license text.
+          </p>
+          <p>
+            Before WatiN 1.0 the LGPL license was used. See <a href="http://www.opensource.org/licenses/lgpl-license.php" target="_blank">http://www.opensource.org/licenses/lgpl-license.php</a>  for the full license text
+          </p><br />
+          <p>
+            <strong>What does WatiN mean and how do you pronounce it?</strong>
+          </p>
+          <p>
+            WatiN (pronounced as what-in) stands for Web Application Testing In .Net.
+          </p>
+          <p>
+            But there are also other translations:
+          </p>
+          <ul type="disc">
+            <li>
+              <span>In the <a href="http://www.ethnologue.com/show_language.asp?code=chp" target="_blank">Chipewyan</a> language it means: <a href="http://www.rmbooks.com/Peakfinder/peakfinder.asp?Peakname=Watin+Mountain" target="_blank">Sunrise</a>.</span>
+            </li>
+            <li>
+              <span>In Poland it means: Garage.</span>
+            </li>
+            <li>
+              <span>In Finland (and maybe some other countries) it means: Watt.</span>
+            </li>
+          </ul>
+          <p>
+            Do you know another meaning for the word Watin, send me a link to a dictionary or other website which explains it and I will add it here.
+          </p>
+        </div>
+        <div id="rightbar">
+          <div id="sidebar">
+            <h1>
+              Quick <span class="green">Links</span>
+            </h1>
+            <ul class="sidemenu">
+              <li>
+                <a href="gettingstarted.html">Getting started</a>
+              </li>
+              <li>
+                <a href="apartmentstateinfo.html">STA ApartmentState</a>
+              </li>
+              <li>
+                <a href="htmlelementmapping.html">HTML mapping list</a>
+              </li>
+              <li>
+                <a href="roadmap.html">Roadmap</a>
+              </li>
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- content-wrap ends here -->
+      </div><!-- footer starts here -->
+      <div id="footer">
+        <div class="footer-left" style="WIDTH: 50%; HEIGHT: 37px">
+          <p class="align-left">
+            © 2007 <strong>Jeroen van Menen</strong> | Design by <a href="http://www.styleshout.com/">styleshout</a>
+          </p>
+        </div>
+        <div class="footer-right" style="WIDTH: 40%; HEIGHT: 54px">
+          <p class="align-right">
+            <a href="index.html">Home</a> |  <a href="http://sourceforge.net/projects/watin/">WatiN on SourceForge</a> |  <a href="http://sourceforge.net/export/rss2_project.php?group_id=167632">RSS Feed</a>s
+          </p>
+          <p class="align-right">
+            <a href="http://sourceforge.net"><img border="0" width="125" height="37" id="_x0000_i1025" src="http://sflogo.sourceforge.net/sflogo.php?group_id=167632&amp;type=2" alt="SourceForge.net Logo" name="_x0000_i1025" /></a>
+          </p>
+        </div>
+      </div><!-- footer ends here -->
+      <!-- wrap ends here -->
+    </div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3606670-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1091/trunk/examples/MsHtmlBrowser/lib
+END
+Microsoft.mshtml.dll
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1079/trunk/examples/MsHtmlBrowser/lib/Microsoft.mshtml.dll
+END
+WatiN.Core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/1091/trunk/examples/MsHtmlBrowser/lib/WatiN.Core.dll
+END
+Interop.SHDocVw.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1079/trunk/examples/MsHtmlBrowser/lib/Interop.SHDocVw.dll
+END
+WatiN.Core.XML
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/1091/trunk/examples/MsHtmlBrowser/lib/WatiN.Core.XML
+END

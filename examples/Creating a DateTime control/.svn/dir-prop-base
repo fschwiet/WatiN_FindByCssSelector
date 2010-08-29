@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 82
+_ReSharper.TestProject
+TestProject.4.5.resharper.user
+TestProject.suo
+TestResults
+
+END

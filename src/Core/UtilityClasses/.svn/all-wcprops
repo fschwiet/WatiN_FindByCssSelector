@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/1109/trunk/src/Core/UtilityClasses
+END
+LazyList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/UtilityClasses/LazyList.cs
+END
+EmptyArray.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/UtilityClasses/EmptyArray.cs
+END
+TryFuncUntilTimeOut.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/UtilityClasses/TryFuncUntilTimeOut.cs
+END
+CaptureWebPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/1109/trunk/src/Core/UtilityClasses/CaptureWebPage.cs
+END
+Utils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/UtilityClasses/Utils.cs
+END
+VariableNameHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/UtilityClasses/VariableNameHelper.cs
+END
+SimpleTimer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/UtilityClasses/SimpleTimer.cs
+END

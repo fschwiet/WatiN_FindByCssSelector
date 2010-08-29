@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Chrome
+END
+ChromeDocument.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Chrome/ChromeDocument.cs
+END
+ChromeException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Chrome/ChromeException.cs
+END
+ChromeBrowser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Chrome/ChromeBrowser.cs
+END
+ChromeClientPort.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Chrome/ChromeClientPort.cs
+END
+ChromeElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Chrome/ChromeElementCollection.cs
+END

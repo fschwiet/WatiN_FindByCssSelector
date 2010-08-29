@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Actions
+END
+ITypeTextAction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Actions/ITypeTextAction.cs
+END
+TypeTextAction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Actions/TypeTextAction.cs
+END
+HighlightAction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Actions/HighlightAction.cs
+END

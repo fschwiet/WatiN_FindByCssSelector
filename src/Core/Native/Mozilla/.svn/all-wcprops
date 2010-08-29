@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Mozilla
+END
+FFBrowser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Mozilla/FFBrowser.cs
+END
+FFElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Mozilla/FFElementCollection.cs
+END
+FireFoxException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Mozilla/FireFoxException.cs
+END
+FireFoxClientPort.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Mozilla/FireFoxClientPort.cs
+END
+AttachToFireFoxHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Mozilla/AttachToFireFoxHelper.cs
+END
+FFDocument.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Native/Mozilla/FFDocument.cs
+END

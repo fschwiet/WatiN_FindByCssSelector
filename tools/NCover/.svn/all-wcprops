@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover
+END
+CoverLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover/CoverLib.dll
+END
+Coverage.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover/Coverage.xsl
+END
+NCover.Framework.dll
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover/NCover.Framework.dll
+END
+NCoverFAQ.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover/NCoverFAQ.html
+END
+MSVCP71.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover/MSVCP71.dll
+END
+MSVCR71.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover/MSVCR71.dll
+END
+ncover.exe
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover/ncover.exe
+END
+NCover.Console.exe
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/40/trunk/tools/NCover/NCover.Console.exe
+END

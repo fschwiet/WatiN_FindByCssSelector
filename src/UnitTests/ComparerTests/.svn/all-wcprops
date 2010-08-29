@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComparerTests
+END
+UriComparerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComparerTests/UriComparerTests.cs
+END
+PredicateComparerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComparerTests/PredicateComparerTests.cs
+END
+StringEqualsAndCaseInsensitiveComparerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComparerTests/StringEqualsAndCaseInsensitiveComparerTests.cs
+END
+StringContainsAndCaseInsensitiveComparerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComparerTests/StringContainsAndCaseInsensitiveComparerTests.cs
+END
+StringComparerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComparerTests/StringComparerTests.cs
+END
+RegexComparerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComparerTests/RegexComparerTests.cs
+END
+BoolComparerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComparerTests/BoolComparerTests.cs
+END

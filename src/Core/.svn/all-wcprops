@@ -1,0 +1,551 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/watin/!svn/ver/1113/trunk/src/Core
+END
+Button.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Button.cs
+END
+SelectList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/SelectList.cs
+END
+Chrome.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Chrome.cs
+END
+IElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/IElementCollection.cs
+END
+Find.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Find.cs
+END
+ElementFinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ElementFinder.cs
+END
+Browser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/watin/!svn/ver/1110/trunk/src/Core/Browser.cs
+END
+Core.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Core.csproj
+END
+ElementTag.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/1111/trunk/src/Core/ElementTag.cs
+END
+TableCell.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TableCell.cs
+END
+IHasDescription.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/IHasDescription.cs
+END
+Element.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/watin/!svn/ver/1108/trunk/src/Core/Element.cs
+END
+ComponentFinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ComponentFinder.cs
+END
+Frame.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Frame.cs
+END
+ElementSelector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ElementSelector.cs
+END
+ControlCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ControlCollection.cs
+END
+RadioCheck.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/RadioCheck.cs
+END
+ParaCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ParaCollection.cs
+END
+FileUploadCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/FileUploadCollection.cs
+END
+BaseElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/BaseElementCollection.cs
+END
+Style.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Style.cs
+END
+FireFox.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/watin/!svn/ver/1113/trunk/src/Core/FireFox.cs
+END
+DefaultSettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DefaultSettings.cs
+END
+FindByDefaultFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/FindByDefaultFactory.cs
+END
+SpanCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/SpanCollection.cs
+END
+Control.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Control.cs
+END
+TableBodyCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TableBodyCollection.cs
+END
+OptionCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/OptionCollection.cs
+END
+FileUpload.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/FileUpload.cs
+END
+AreaCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/AreaCollection.cs
+END
+ButtonCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ButtonCollection.cs
+END
+Table.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Table.cs
+END
+SelectListCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/SelectListCollection.cs
+END
+NativeElementFinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1108/trunk/src/Core/NativeElementFinder.cs
+END
+ElementContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ElementContainer.cs
+END
+Body.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Body.cs
+END
+Link.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Link.cs
+END
+DivCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DivCollection.cs
+END
+WaitForCompleteBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/WaitForCompleteBase.cs
+END
+Settings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Settings.cs
+END
+CheckBoxCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/CheckBoxCollection.cs
+END
+HtmlColor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/HtmlColor.cs
+END
+Form.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Form.cs
+END
+TableCellCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TableCellCollection.cs
+END
+TextFieldCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TextFieldCollection.cs
+END
+ElementCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ElementCollection.cs
+END
+RadioButtonCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/RadioButtonCollection.cs
+END
+Area.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Area.cs
+END
+Option.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Option.cs
+END
+ElementTagAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ElementTagAttribute.cs
+END
+NativeElementCollectionAdapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/1108/trunk/src/Core/NativeElementCollectionAdapter.cs
+END
+PageMetadata.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/PageMetadata.cs
+END
+Document.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Document.cs
+END
+Label.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Label.cs
+END
+TableRow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TableRow.cs
+END
+ElementFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1107/trunk/src/Core/ElementFactory.cs
+END
+ComponentExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ComponentExtensions.cs
+END
+Div.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Div.cs
+END
+DomContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DomContainer.cs
+END
+CheckBox.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/CheckBox.cs
+END
+TextField.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TextField.cs
+END
+StaticElementFinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/StaticElementFinder.cs
+END
+RadioButton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/RadioButton.cs
+END
+IE.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/IE.cs
+END
+ImageCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ImageCollection.cs
+END
+FindByAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/FindByAttribute.cs
+END
+HTMLDialogCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1107/trunk/src/Core/HTMLDialogCollection.cs
+END
+Component.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Component.cs
+END
+TableCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TableCollection.cs
+END
+IElementContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/IElementContainer.cs
+END
+IdHinter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/IdHinter.cs
+END
+DescriptionAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/DescriptionAttribute.cs
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/watin/!svn/ver/929/trunk/src/Core/Readme.txt
+END
+BaseComponentCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/BaseComponentCollection.cs
+END
+LinkCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/LinkCollection.cs
+END
+Page.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Page.cs
+END
+ComponentFinderAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ComponentFinderAttribute.cs
+END
+FormCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/FormCollection.cs
+END
+Image.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Image.cs
+END
+Para.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Para.cs
+END
+HTMLDialog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/HTMLDialog.cs
+END
+ComponentDecoratorAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/ComponentDecoratorAttribute.cs
+END
+LabelCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/LabelCollection.cs
+END
+TableRowCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TableRowCollection.cs
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/watin/!svn/ver/381/trunk/src/Core/License.txt
+END
+PageAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/PageAttribute.cs
+END
+Span.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Span.cs
+END
+Composite.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Composite.cs
+END
+TableBody.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/TableBody.cs
+END
+FrameCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/FrameCollection.cs
+END
+IECollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/IECollection.cs
+END

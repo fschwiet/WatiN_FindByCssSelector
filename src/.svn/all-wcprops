@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svnroot/watin/!svn/ver/1113/trunk/src
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/watin/!svn/ver/1090/trunk/src/License.txt
+END
+ReleaseHistory.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/929/trunk/src/ReleaseHistory.txt
+END
+WatiN.FxCop
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/watin/!svn/ver/102/trunk/src/WatiN.FxCop
+END
+Chrome implementation status.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/968/trunk/src/Chrome%20implementation%20status.txt
+END
+TODO for multi browser support.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1090/trunk/src/TODO%20for%20multi%20browser%20support.txt
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/watin/!svn/ver/1090/trunk/src/Readme.txt
+END
+WatiN Resharper File Templates.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/881/trunk/src/WatiN%20Resharper%20File%20Templates.xml
+END
+WatiN.snk
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/watin/!svn/ver/808/trunk/src/WatiN.snk
+END
+WatiN.sln
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/watin/!svn/ver/1107/trunk/src/WatiN.sln
+END

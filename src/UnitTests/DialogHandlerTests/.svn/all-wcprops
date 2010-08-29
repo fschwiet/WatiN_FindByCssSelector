@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests
+END
+WinButtonTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/WinButtonTests.cs
+END
+LogonDialogHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/LogonDialogHandlerTests.cs
+END
+DialogHandlerHelperTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/DialogHandlerHelperTests.cs
+END
+PromptDialogHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/PromptDialogHandlerTests.cs
+END
+CloseIEDialogHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/CloseIEDialogHandlerTests.cs
+END
+FileDownloadHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/FileDownloadHandlerTests.cs
+END
+SimpleJavaDialogHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/SimpleJavaDialogHandlerTests.cs
+END
+VbScriptMsgBoxHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/VbScriptMsgBoxHandlerTests.cs
+END
+ConfirmDialogHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/ConfirmDialogHandlerTests.cs
+END
+ReturnJavaDialogHandlerTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/ReturnJavaDialogHandlerTest.cs
+END
+DialogWatcherTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/DialogWatcherTests.cs
+END
+ModalPopupExtenderTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/ModalPopupExtenderTests.cs
+END
+SecurityDialogHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/SecurityDialogHandlerTests.cs
+END
+AlertDialogHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/AlertDialogHandlerTests.cs
+END
+AlertAndConfirmDialogHandlerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DialogHandlerTests/AlertAndConfirmDialogHandlerTests.cs
+END

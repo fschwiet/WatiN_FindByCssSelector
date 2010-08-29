@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc
+END
+perfutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/perfutil.h
+END
+dirutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/dirutil.h
+END
+memutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/memutil.h
+END
+aclutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/aclutil.h
+END
+fileutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/fileutil.h
+END
+sqlutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/sqlutil.h
+END
+xmlutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/xmlutil.h
+END
+dutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/dutil.h
+END
+cabutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/cabutil.h
+END
+metautil.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/metautil.h
+END
+cabcutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/cabcutil.h
+END
+strutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/strutil.h
+END
+wcautil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/335/trunk/tools/WiX/inc/wcautil.h
+END

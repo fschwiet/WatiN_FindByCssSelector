@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/watin/!svn/ver/971/trunk/lib/Net/2.0
+END
+nunit.framework.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/439/trunk/lib/Net/2.0/nunit.framework.dll
+END
+Rhino.Mocks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/339/trunk/lib/Net/2.0/Rhino.Mocks.dll
+END
+Interop.SHDocVw.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/808/trunk/lib/Net/2.0/Interop.SHDocVw.dll
+END
+Moq.dll
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/watin/!svn/ver/971/trunk/lib/Net/2.0/Moq.dll
+END
+nunit.framework.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/702/trunk/lib/Net/2.0/nunit.framework.xml
+END
+Moq.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/watin/!svn/ver/971/trunk/lib/Net/2.0/Moq.xml
+END

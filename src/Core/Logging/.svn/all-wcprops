@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging
+END
+FileLogWriter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging/FileLogWriter.cs
+END
+NoLog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging/NoLog.cs
+END
+Logger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging/Logger.cs
+END
+ConsoleLogWriter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging/ConsoleLogWriter.cs
+END
+DebugLogWriter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging/DebugLogWriter.cs
+END
+LogMessageEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging/LogMessageEventArgs.cs
+END
+StringLogWriter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging/StringLogWriter.cs
+END
+LogMessageType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Logging/LogMessageType.cs
+END

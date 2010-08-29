@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer
+END
+ConsoleExample.config
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer/ConsoleExample.config
+END
+ICSharpCode.TextEditor.dll
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer/ICSharpCode.TextEditor.dll
+END
+NCoverExplorerFAQ.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer/NCoverExplorerFAQ.html
+END
+NCoverExplorerReleaseNotes.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer/NCoverExplorerReleaseNotes.html
+END
+CoverageReport.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer/CoverageReport.xsl
+END
+NCoverExplorer.exe
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer/NCoverExplorer.exe
+END
+NCoverExplorer.Console.exe
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer/NCoverExplorer.Console.exe
+END
+NCoverExplorer.Core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/51/trunk/tools/NCoverExplorer/NCoverExplorer.Core.dll
+END

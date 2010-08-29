@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin
+END
+nunit.fixtures.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.fixtures.dll
+END
+nunit.fixtures.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.fixtures.tests.dll
+END
+mock-assembly.dll
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/mock-assembly.dll
+END
+nunit.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.exe.config
+END
+nunit-console.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-console.exe.config
+END
+nunit.util.dll
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.util.dll
+END
+nunit.util.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.util.tests.dll
+END
+clr.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/146/trunk/tools/NUnit/Net-2.0-bin/clr.bat
+END
+NUnitFitTests.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/439/trunk/tools/NUnit/Net-2.0-bin/NUnitFitTests.html
+END
+nunit.framework.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.framework.xml
+END
+nunit-gui.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-gui.tests.dll
+END
+fit.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/439/trunk/tools/NUnit/Net-2.0-bin/fit.dll
+END
+nunit.core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.core.dll
+END
+nunit.core.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.core.tests.dll
+END
+nunit-x86.exe
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-x86.exe
+END
+nunit-console-x86.exe
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-console-x86.exe
+END
+nunit.framework.extensions.dll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.framework.extensions.dll
+END
+test-utilities.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/test-utilities.dll
+END
+nunit.framework.dll
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.framework.dll
+END
+nunit-x86.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-x86.exe.config
+END
+nunit-console-x86.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-console-x86.exe.config
+END
+nunit.framework.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.framework.tests.dll
+END
+nunit.extensions.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.extensions.tests.dll
+END
+Failure.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/439/trunk/tools/NUnit/Net-2.0-bin/Failure.jpg
+END
+Ignored.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/439/trunk/tools/NUnit/Net-2.0-bin/Ignored.jpg
+END
+nunit-console.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-console.tests.dll
+END
+nunit.exe
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.exe
+END
+nunit-console.exe
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-console.exe
+END
+nunit.core.interfaces.dll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.core.interfaces.dll
+END
+nonamespace-assembly.dll
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nonamespace-assembly.dll
+END
+nunit.mocks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.mocks.dll
+END
+nunit.mocks.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.mocks.tests.dll
+END
+NUnitTests.config
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/NUnitTests.config
+END
+runFile.exe
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/439/trunk/tools/NUnit/Net-2.0-bin/runFile.exe
+END
+Success.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/439/trunk/tools/NUnit/Net-2.0-bin/Success.jpg
+END
+runFile.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/439/trunk/tools/NUnit/Net-2.0-bin/runFile.exe.config
+END
+nunit.uikit.dll
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.uikit.dll
+END
+nunit.core.extensions.dll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.core.extensions.dll
+END
+nunit.uikit.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit.uikit.tests.dll
+END
+notestfixtures-assembly.dll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/notestfixtures-assembly.dll
+END
+nunit-gui-runner.dll
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-gui-runner.dll
+END
+timing-tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/timing-tests.dll
+END
+loadtest-assembly.dll
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/loadtest-assembly.dll
+END
+test-assembly.dll
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/test-assembly.dll
+END
+NUnitTests.nunit
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/NUnitTests.nunit
+END
+nunit-console-runner.dll
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/972/trunk/tools/NUnit/Net-2.0-bin/nunit-console-runner.dll
+END

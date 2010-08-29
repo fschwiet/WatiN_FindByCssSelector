@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/net/2.0
+END
+NDoc.Documenter.Msdn.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/net/2.0/NDoc.Documenter.Msdn.dll
+END
+nunit.framework.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/net/2.0/nunit.framework.dll
+END
+nunit.util.dll
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/net/2.0/nunit.util.dll
+END
+NDoc.Core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/net/2.0/NDoc.Core.dll
+END
+NDoc.ExtendedUI.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/net/2.0/NDoc.ExtendedUI.dll
+END
+nunit.core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/net/2.0/nunit.core.dll
+END

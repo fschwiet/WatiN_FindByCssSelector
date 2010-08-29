@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/964/trunk/tools/NAnt/extensions/common/2.0
+END
+NAnt.MSBuild.dll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/watin/!svn/ver/964/trunk/tools/NAnt/extensions/common/2.0/NAnt.MSBuild.dll
+END
+Macrodef.dll
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/964/trunk/tools/NAnt/extensions/common/2.0/Macrodef.dll
+END
+NAnt.MSBuild.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/watin/!svn/ver/964/trunk/tools/NAnt/extensions/common/2.0/NAnt.MSBuild.xml
+END

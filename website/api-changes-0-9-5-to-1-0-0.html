@@ -1,0 +1,3842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
+    <title>
+      Changes in watin.core from v1 (Version 1.1.4322.2032)to v2 (Version
+      1.1.4322.2032)
+    </title>
+	<LINK href="images/BrightSide.css" type="text/css" rel="stylesheet">
+</head>
+  <body link="blue" vlink="blue">
+    <div id="content-wrap">
+
+	<div id="main"class="Section1">
+      <p>
+         
+      </p>
+      <h1 align="center">
+        <a name="top" id="top"></a>Changes in WatiN.Core from version
+        0.9.5.4000<br>
+        to version 1.0.0.4000
+      </h1>
+      <div align="center">
+        <table border="1" cellspacing="0" cellpadding="0" width="90%"
+        border-style:="">
+          <thead>
+            <tr>
+              <td>
+                <p>
+                  <strong>Removed</strong>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <strong>Added</strong>
+                </p>
+              </td>
+            </tr>
+          </thead>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Attribute" id=
+                "WatiN.Core_Attribute"><strong>public class
+                WatiN.Core.Attribute</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method: public virtual bool <strong>Compare</strong> (object
+                <i>ihtmlelement</i>)
+                </li>
+                <li>Method: public virtual bool <strong>Compare</strong> (string
+                <i>value</i>)
+                </li>
+                <li>Method: protected string <strong>GetAttribute</strong> (IHTMLElement
+                <i>element</i>, string <i>attributeName</i>)
+                </li>
+                <li>Method: protected static IHTMLElement
+                <strong>GetIHTMLElement</strong> (object <i>ihtmlelement</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Attribute</strong> (string
+                <i>attributeName</i>, ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method: public virtual bool <strong>Compare</strong> (IAttributeBag
+                <i>attributeBag</i>)
+                </li>
+                <li>Method: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method: protected virtual void <strong>LockCompare</strong> ()
+                </li>
+                <li>Method: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method: protected virtual void <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_BoolComparer" id=
+                "WatiN.Core_BoolComparer"><strong>WatiN.Core BoolComparer ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.BoolComparer</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>BoolComparer</strong> (bool <i>value</i>)
+                </li>
+                <li>Method: public virtual bool <strong>Compare</strong> (string
+                <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Button" id="WatiN.Core_Button"><strong>public
+                class WatiN.Core.Button</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method: public static void <strong>CheckElement</strong> (object <i>
+                  htmlElement</i>, ArrayList <i>elementTags</i>)
+                </li>
+                <li>Method: public static ArrayList <strong>CreateElementTags</strong>
+                (string <i>tagnames</i>, string <i>inputtypes</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_CheckBox" id=
+                "WatiN.Core_CheckBox"><strong>public class
+                WatiN.Core.CheckBox</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>CheckBox</strong> (Element
+                <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_CreateElementCollectionInstan" id=
+                "WatiN.Core_CreateElementCollectionInstan"><strong>WatiN.Core
+                CreateElementCollectionInstance ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                public sealed delegate
+                <strong>WatiN.Core.CreateElementCollectionInstance</strong>
+              </p>
+            </td>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>CreateElementCollectionInstance</strong>
+                (object <i>object</i>, IntPtr <i>method</i>)
+                </li>
+                <li>Method: public virtual IAsyncResult <strong>BeginInvoke</strong>
+                (DomContainer <i>domContainer</i>, ArrayList <i>elements</i>,
+                AsyncCallback <i>callback</i>, object <i>object</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual object <strong>Clone</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected virtual delegate
+                <strong>CombineImpl</strong> (delegate <i>follow</i>)
+                </li>
+                <li>Method <i>(i)</i>: public object <strong>DynamicInvoke</strong>
+                (object[] <i>args</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual object
+                <strong>DynamicInvokeImpl</strong> (object[] <i>args</i>)
+                </li>
+                <li>Method: public virtual Element <strong>EndInvoke</strong>
+                (IAsyncResult <i>result</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual delegate[]
+                <strong>GetInvocationList</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected virtual MethodInfo
+                <strong>GetMethodImpl</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual void <strong>GetObjectData</strong>
+                (SerializationInfo <i>info</i>, StreamingContext
+                <i>context</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method: public virtual Element <strong>Invoke</strong> (DomContainer
+                <i>domContainer</i>, ArrayList <i>elements</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: protected virtual delegate
+                <strong>RemoveImpl</strong> (delegate <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Property: MethodInfo <strong>Method</strong> { public get; }
+                </li>
+                <li>Property: object <strong>Target</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Div" id="WatiN.Core_Div"><strong>public class
+                WatiN.Core.Div</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Div</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Document" id=
+                "WatiN.Core_Document"><strong>public abstract class
+                WatiN.Core.Document</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method: public Frame <strong>Frame</strong> (Id <i>findBy</i>)
+                </li>
+                <li>Method: public Frame <strong>Frame</strong> (Name <i>findBy</i>)
+                </li>
+                <li>Method: public Frame <strong>Frame</strong> (Url <i>findBy</i>)
+                </li>
+                <li>Method: public virtual TableCell <strong>TableCell</strong> (string
+                <i>elementId</i>, int <i>occurrence</i>)
+                </li>
+                <li>Method: public virtual TableCell <strong>TableCell</strong> (Regex
+                <i>elementId</i>, int <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public Frame <strong>Frame</strong> (Regex <i>id</i>)
+                </li>
+                <li>Method: public Frame <strong>Frame</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method: public virtual TableBody <strong>TableBody</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method: public virtual TableBody <strong>TableBody</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method: public virtual TableBody <strong>TableBody</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method: public virtual TableCell <strong>TableCell</strong> (string
+                <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method: public virtual TableCell <strong>TableCell</strong> (Regex
+                <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_DomContainer" id=
+                "WatiN.Core_DomContainer"><strong>public abstract class
+                WatiN.Core.DomContainer</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Id
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Name
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Url
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Regex
+                <i>id</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (attribute <i>
+                  findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Element" id="WatiN.Core_Element"><strong>public
+                class WatiN.Core.Element</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Element</strong> (Element <i>element</i>,
+                ArrayList <i>elementTags</i>)
+                </li>
+                <li>Method: public void <strong>FireEventNoWait</strong> (string
+                <i>eventName</i>)
+                </li>
+                <li>Method: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_ElementAttributeBag" id=
+                "WatiN.Core_ElementAttributeBag"><strong>WatiN.Core
+                ElementAttributeBag ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.ElementAttributeBag</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>ElementAttributeBag</strong> ()
+                </li>
+                <li>Constructor: public <strong>ElementAttributeBag</strong>
+                (IHTMLElement <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method: public virtual string <strong>GetValue</strong> (string
+                <i>attributename</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Property: IHTMLElement <strong>IHTMLElement</strong> { public get;
+                public set; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_ElementFinder" id=
+                "WatiN.Core_ElementFinder"><strong>public class
+                WatiN.Core.ElementFinder</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public virtual IHTMLElement <strong>FindFirst</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_ElementsContainer" id=
+                "WatiN.Core_ElementsContainer"><strong>public class
+                WatiN.Core.ElementsContainer</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method: public virtual TableCell <strong>TableCell</strong> (string
+                <i>elementId</i>, int <i>occurrence</i>)
+                </li>
+                <li>Method: public virtual TableCell <strong>TableCell</strong> (Regex
+                <i>elementId</i>, int <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>ElementsContainer</strong> (Element
+                <i>element</i>, ArrayList <i>elementTags</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method: public virtual TableBody <strong>TableBody</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method: public virtual TableBody <strong>TableBody</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method: public virtual TableBody <strong>TableBody</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method: public virtual TableCell <strong>TableCell</strong> (string
+                <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method: public virtual TableCell <strong>TableCell</strong> (Regex
+                <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_ElementsSupport" id=
+                "WatiN.Core_ElementsSupport"><strong>public sealed class
+                WatiN.Core.ElementsSupport</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Field: public static const string <strong>ButtonTagName</strong>, <strong>
+                  <i>Value = BUTTON</i></strong>
+                </li>
+                <li>Field: public static const string <strong>DivTagName</strong>, <strong><i>
+                  Value = DIV</i></strong>
+                </li>
+                <li>Field: public static const string <strong>FormTagName</strong>,
+                <strong><i>Value = FORM</i></strong>
+                </li>
+                <li>Field: public static const string <strong>ImageTagName</strong>, <strong>
+                  <i>Value = IMG</i></strong>
+                </li>
+                <li>Field: public static const string <strong>InputButtonType</strong>,
+                <strong><i>Value = button submit image reset</i></strong>
+                </li>
+                <li>Field: public static const string <strong>InputCheckBoxType</strong>,
+                <strong><i>Value = checkbox</i></strong>
+                </li>
+                <li>Field: public static const string <strong>InputFileType</strong>, <strong>
+                  <i>Value = file</i></strong>
+                </li>
+                <li>Field: public static const string <strong>InputImageType</strong>,
+                <strong><i>Value = image</i></strong>
+                </li>
+                <li>Field: public static const string <strong>InputNullType</strong>
+                </li>
+                <li>Field: public static const string
+                <strong>InputRadioButtonType</strong>, <strong><i>Value = radio</i></strong>
+                </li>
+                <li>Field: public static const string
+                <strong>InputTextFieldType</strong>, <strong><i>Value = text password textarea
+                hidden</i></strong>
+                </li>
+                <li>Field: public static const string <strong>LabelTagName</strong>, <strong>
+                  <i>Value = LABEL</i></strong>
+                </li>
+                <li>Field: public static const string <strong>LinkTagName</strong>,
+                <strong><i>Value = A</i></strong>
+                </li>
+                <li>Field: public static const string <strong>ParaTagName</strong>,
+                <strong><i>Value = P</i></strong>
+                </li>
+                <li>Field: public static const string <strong>SelectListTagName</strong>,
+                <strong><i>Value = SELECT</i></strong>
+                </li>
+                <li>Field: public static const string <strong>SpanTagName</strong>,
+                <strong><i>Value = SPAN</i></strong>
+                </li>
+                <li>Field: public static const string <strong>TableRowTagName</strong>,
+                <strong><i>Value = TR</i></strong>
+                </li>
+                <li>Field: public static const string <strong>TableTagName</strong>, <strong>
+                  <i>Value = TABLE</i></strong>
+                </li>
+                <li>Field: public static const string <strong>TextAreaTagName</strong>,
+                <strong><i>Value = TEXTAREA</i></strong>
+                </li>
+                <li>Method: public static TableCell <strong>TableCell</strong>
+                (DomContainer <i>ie</i>, string <i>elementId</i>, int
+                <i>occurrence</i>, IHTMLElementCollection <i>elements</i>)
+                </li>
+                <li>Method: public static TableCell <strong>TableCell</strong>
+                (DomContainer <i>ie</i>, Regex <i>elementId</i>, int
+                <i>occurrence</i>, IHTMLElementCollection <i>elements</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public static Option <strong>Option</strong> (DomContainer
+                <i>ie</i>, attribute <i>findBy</i>, IHTMLElementCollection <i>
+                  elements</i>)
+                </li>
+                <li>Method: public static OptionCollection <strong>Options</strong>
+                (DomContainer <i>ie</i>, IHTMLElementCollection
+                <i>elements</i>)
+                </li>
+                <li>Method: public static TableBodyCollection
+                <strong>TableBodies</strong> (DomContainer <i>ie</i>,
+                IHTMLElementCollection <i>elements</i>)
+                </li>
+                <li>Method: public static TableBody <strong>TableBody</strong>
+                (DomContainer <i>ie</i>, attribute <i>findBy</i>,
+                IHTMLElementCollection <i>elements</i>)
+                </li>
+                <li>Method: public static TableCell <strong>TableCell</strong>
+                (DomContainer <i>ie</i>, string <i>elementId</i>, int
+                <i>index</i>, IHTMLElementCollection <i>elements</i>)
+                </li>
+                <li>Method: public static TableCell <strong>TableCell</strong>
+                (DomContainer <i>ie</i>, Regex <i>elementId</i>, int
+                <i>index</i>, IHTMLElementCollection <i>elements</i>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_ElementTag" id=
+                "WatiN.Core_ElementTag"><strong>public class
+                WatiN.Core.ElementTag</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>ElementTag</strong> (string
+                <i>tagName</i>)
+                </li>
+                <li>Method: public static bool <strong>IsValidElement</strong>
+                (IHTMLElement <i>element</i>, ArrayList <i>elementTags</i>)
+                </li>
+                <li>Method: public static bool <strong>IsValidElement</strong> (object
+                <i>element</i>, ArrayList <i>elementTags</i>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_FileUpload" id=
+                "WatiN.Core_FileUpload"><strong>public class
+                WatiN.Core.FileUpload</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>FileUpload</strong> (Element
+                <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Find" id="WatiN.Core_Find"><strong>public sealed
+                class WatiN.Core.Find</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public static Index <strong>ByIndex</strong> (int
+                <i>index</i>)
+                </li>
+                <li>Method: public static StyleAttribute <strong>ByStyle</strong> (string
+                <i>styleAttributeName</i>, string <i>value</i>)
+                </li>
+                <li>Method: public static StyleAttribute <strong>ByStyle</strong> (string
+                <i>styleAttributeName</i>, Regex <i>value</i>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_For" id="WatiN.Core_For"><strong>public class
+                WatiN.Core.For</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>For</strong> (ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Form" id="WatiN.Core_Form"><strong>public class
+                WatiN.Core.Form</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Form</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Frame" id="WatiN.Core_Frame"><strong>WatiN.Core
+                Frame ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.Frame</strong><br>
+                (Please hover your mouse over the type to see the inheritance
+                signatures)
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.Frame</strong><br>
+                (Please hover your mouse over the type to see the inheritance
+                signatures)
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method: public static Frame <strong>Find</strong> (FrameCollection
+                <i>frames</i>, Id <i>findBy</i>)
+                </li>
+                <li>Method: public static Frame <strong>Find</strong> (FrameCollection
+                <i>frames</i>, Name <i>findBy</i>)
+                </li>
+                <li>Method: public static Frame <strong>Find</strong> (FrameCollection
+                <i>frames</i>, Url <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Id
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Name
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Url
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public static Frame <strong>Find</strong> (FrameCollection
+                <i>frames</i>, attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Regex
+                <i>id</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (attribute <i>
+                  findBy</i>)
+                </li>
+                <li>Method: public virtual string <strong>GetValue</strong> (string
+                <i>attributename</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_FrameCollection" id=
+                "WatiN.Core_FrameCollection"><strong>public class
+                WatiN.Core.FrameCollection</strong></a> <strong>()</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public bool <strong>Exists</strong> (attribute <i>findBy</i>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_HtmlDialog" id=
+                "WatiN.Core_HtmlDialog"><strong>WatiN.Core HtmlDialog ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.HtmlDialog</strong><br>
+                (Please hover your mouse over the type to see the inheritance
+                signatures)
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.HtmlDialog</strong><br>
+                (Please hover your mouse over the type to see the inheritance
+                signatures)
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Id
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Name
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Url
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Regex
+                <i>id</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (attribute <i>
+                  findBy</i>)
+                </li>
+                <li>Method: public virtual string <strong>GetValue</strong> (string
+                <i>attributename</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_HtmlDialogCollection" id=
+                "WatiN.Core_HtmlDialogCollection"><strong>public class
+                WatiN.Core.HtmlDialogCollection ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public bool <strong>Exists</strong> (attribute <i>findBy</i>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Id" id="WatiN.Core_Id"><strong>public class
+                WatiN.Core.Id ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Id</strong> (ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_IdAndOccurrence" id=
+                "WatiN.Core_IdAndOccurrence"><strong>WatiN.Core IdAndOccurrence
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.IdAndOccurrence</strong>
+              </p>
+            </td>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>IdAndOccurrence</strong> (string
+                <i>id</i>, int <i>occurrence</i>)
+                </li>
+                <li>Constructor: public <strong>IdAndOccurrence</strong> (Regex
+                <i>regex</i>, int <i>occurrence</i>)
+                </li>
+                <li>Field: protected ICompare <strong>comparer</strong>
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method: public override bool <strong>Compare</strong> (string
+                <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Property: virtual string <strong>AttributeName</strong> { public get;
+                }
+                </li>
+                <li>Property: int <strong>Occurrence</strong> { public get; }
+                </li>
+                <li>Property: virtual string <strong>Value</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_IE" id="WatiN.Core_IE"><strong>public class
+                WatiN.Core.IE ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method: public static IE <strong>AttachToIE</strong> (Title
+                <i>findBy</i>)
+                </li>
+                <li>Method: public static IE <strong>AttachToIE</strong> (Title
+                <i>findBy</i>, int <i>timeout</i>)
+                </li>
+                <li>Method: public static IE <strong>AttachToIE</strong> (Url
+                <i>findBy</i>)
+                </li>
+                <li>Method: public static IE <strong>AttachToIE</strong> (Url
+                <i>findBy</i>, int <i>timeout</i>)
+                </li>
+                <li>Method: public static bool <strong>Exists</strong> (Title
+                <i>findBy</i>)
+                </li>
+                <li>Method: public static bool <strong>Exists</strong> (Url
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Id
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Name
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Url
+                <i>findBy</i>)
+                </li>
+                <li>Method: public HtmlDialog <strong>HtmlDialog</strong> (Title
+                <i>findBy</i>)
+                </li>
+                <li>Method: public HtmlDialog <strong>HtmlDialog</strong> (Title
+                <i>findBy</i>, int <i>timeout</i>)
+                </li>
+                <li>Method: public HtmlDialog <strong>HtmlDialog</strong> (Url
+                <i>findBy</i>)
+                </li>
+                <li>Method: public HtmlDialog <strong>HtmlDialog</strong> (Url
+                <i>findBy</i>, int <i>timeout</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public static IE <strong>AttachToIE</strong> (attribute
+                <i>findBy</i>)
+                </li>
+                <li>Method: public static IE <strong>AttachToIE</strong> (attribute
+                <i>findBy</i>, int <i>timeout</i>)
+                </li>
+                <li>Method: public static bool <strong>Exists</strong> (attribute
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (Regex
+                <i>id</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Frame <strong>Frame</strong> (attribute <i>
+                  findBy</i>)
+                </li>
+                <li>Method: public HtmlDialog <strong>HtmlDialog</strong> (attribute <i>
+                  findBy</i>)
+                </li>
+                <li>Method: public HtmlDialog <strong>HtmlDialog</strong> (attribute <i>
+                  findBy</i>, int <i>timeout</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Property: static Settings <strong>Settings</strong> { public get;
+                public set; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_IEAttributeBag" id=
+                "WatiN.Core_IEAttributeBag"><strong>WatiN.Core IEAttributeBag
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.IEAttributeBag</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>IEAttributeBag</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method: public virtual string <strong>GetValue</strong> (string
+                <i>attributename</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Property: InternetExplorer <strong>InternetExplorer</strong> { public
+                get; public set; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Image" id="WatiN.Core_Image"><strong>public
+                class WatiN.Core.Image ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Image</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Index" id="WatiN.Core_Index"><strong>WatiN.Core
+                Index ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.Index</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Index</strong> (int <i>index</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected ICompare <strong>comparer</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method: public override bool <strong>Compare</strong> (IAttributeBag
+                <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+                <li>Property: virtual string <strong>AttributeName</strong> { public get;
+                }
+                </li>
+                <li>Property: virtual string <strong>Value</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Label" id="WatiN.Core_Label"><strong>public
+                class WatiN.Core.Label ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Label</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Link" id="WatiN.Core_Link"><strong>public class
+                WatiN.Core.Link ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Link</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Name" id="WatiN.Core_Name"><strong>public class
+                WatiN.Core.Name ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Name</strong> (ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Option" id=
+                "WatiN.Core_Option"><strong>WatiN.Core Option ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.Option</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Option</strong> (DomContainer <i>ie</i>,
+                IHTMLOptionElement <i>optionElement</i>)
+                </li>
+                <li>Constructor: public <strong>Option</strong> (DomContainer <i>ie</i>,
+                ElementFinder <i>finder</i>)
+                </li>
+                <li>Constructor: public <strong>Option</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Blur</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Change</strong> ()
+                </li>
+                <li>Method: public void <strong>Clear</strong> ()
+                </li>
+                <li>Method: public void <strong>ClearNoWait</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Click</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>ClickNoWait</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>DoubleClick</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEvent</strong> (string <i>
+                  eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Focus</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public string <strong>GetAttributeValue</strong>
+                (string <i>attributeName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected void <strong>Highlight</strong> (bool
+                <i>doHighlight</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>KeyDown</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>KeyPress</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>KeyUp</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>MouseDown</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>MouseEnter</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>MouseUp</strong> ()
+                </li>
+                <li>Method: public void <strong>Select</strong> ()
+                </li>
+                <li>Method: public void <strong>SelectNoWait</strong> ()
+                </li>
+                <li>Method: public override string <strong>ToString</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitForComplete</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilExists</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilExists</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: string <strong>ClassName</strong> { public get; }
+                </li>
+                <li>Property: bool <strong>Complete</strong> { public get; }
+                </li>
+                <li>Property: bool <strong>DefaultSelected</strong> { public get; }
+                </li>
+                <li>Property: protected DispHTMLBaseElement
+                <strong>DispHtmlBaseElement</strong> { }
+                </li>
+                <li>Property: DomContainer <strong>DomContainer</strong> { public get; }
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: bool <strong>Enabled</strong> { public get; }
+                </li>
+                <li>Property: bool <strong>Exists</strong> { public get; }
+                </li>
+                <li>Property: protected IHTMLElement <strong>htmlElement</strong> { }
+                </li>
+                <li>Property: object <strong>HTMLElement</strong> { public get; }
+                </li>
+                <li>Property: string <strong>Id</strong> { public get; }
+                </li>
+                <li>Property: int <strong>Index</strong> { public get; }
+                </li>
+                <li>Property: string <strong>InnerHtml</strong> { public get; }
+                </li>
+                <li>Property: Element <strong>NextSibling</strong> { public get; }
+                </li>
+                <li>Property: string <strong>OuterHtml</strong> { public get; }
+                </li>
+                <li>Property: string <strong>OuterText</strong> { public get; }
+                </li>
+                <li>Property: Element <strong>Parent</strong> { public get; }
+                </li>
+                <li>Property: SelectList <strong>ParentSelectList</strong> { public get;
+                }
+                </li>
+                <li>Property: Element <strong>PreviousSibling</strong> { public get; }
+                </li>
+                <li>Property: bool <strong>Selected</strong> { public get; }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: string <strong>TagName</strong> { public get; }
+                </li>
+                <li>Property: virtual string <strong>Text</strong> { public get; }
+                </li>
+                <li>Property: string <strong>TextAfter</strong> { public get; }
+                </li>
+                <li>Property: string <strong>TextBefore</strong> { public get; }
+                </li>
+                <li>Property: string <strong>Title</strong> { public get; }
+                </li>
+                <li>Property: string <strong>Value</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_OptionCollection" id=
+                "WatiN.Core_OptionCollection"><strong>WatiN.Core OptionCollection
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.OptionCollection</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>OptionCollection</strong> (DomContainer
+                <i>domContainer</i>, ArrayList <i>elements</i>)
+                </li>
+                <li>Constructor: public <strong>OptionCollection</strong> (DomContainer
+                <i>domContainer</i>, ElementFinder <i>finder</i>)
+                </li>
+                <li>Field: protected DomContainer <strong>domContainer</strong>
+                </li>
+                <li>Method <i>(i)</i>: protected ArrayList <strong>DoFilter</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: public bool <strong>Exists</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public bool <strong>Exists</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public bool <strong>Exists</strong> (attribute <i>
+                  findBy</i>)
+                </li>
+                <li>Method: public OptionCollection <strong>Filter</strong> (attribute
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public Enumerator <strong>GetEnumerator</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Property: protected ArrayList <strong>Elements</strong> { }
+                </li>
+                <li>Property: Option <strong>this</strong> [int <i>index</i>] { public
+                get; }
+                </li>
+                <li>Property: int <strong>Length</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Para" id="WatiN.Core_Para"><strong>public class
+                WatiN.Core.Para ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Para</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_RadioButton" id=
+                "WatiN.Core_RadioButton"><strong>public class WatiN.Core.RadioButton
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>RadioButton</strong> (Element
+                <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_RadioCheck" id=
+                "WatiN.Core_RadioCheck"><strong>public class WatiN.Core.RadioCheck
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>RadioCheck</strong> (Element
+                <i>element</i>, ArrayList <i>elementTags</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_SelectList" id=
+                "WatiN.Core_SelectList"><strong>public class WatiN.Core.SelectList
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>SelectList</strong> (Element
+                <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method: public Option <strong>Option</strong> (string <i>text</i>)
+                </li>
+                <li>Method: public Option <strong>Option</strong> (Regex <i>text</i>)
+                </li>
+                <li>Method: public Option <strong>Option</strong> (attribute
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: OptionCollection <strong>Options</strong> { public get; }
+                </li>
+                <li>Property: Option <strong>SelectedOption</strong> { public get; }
+                </li>
+                <li>Property: ArrayList <strong>SelectedOptions</strong> { public get; }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Settings" id=
+                "WatiN.Core_Settings"><strong>WatiN.Core Settings ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.Settings</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Settings</strong> ()
+                </li>
+                <li>Method: public Settings <strong>Clone</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method: public void <strong>Reset</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Property: int <strong>AttachToIETimeOut</strong> { public get; public
+                set; }
+                </li>
+                <li>Property: bool <strong>AutoCloseDialogs</strong> { public get; public
+                set; }
+                </li>
+                <li>Property: string <strong>HighLightColor</strong> { public get; public
+                set; }
+                </li>
+                <li>Property: bool <strong>HighLightElement</strong> { public get; public
+                set; }
+                </li>
+                <li>Property: int <strong>WaitForCompleteTimeOut</strong> { public get;
+                public set; }
+                </li>
+                <li>Property: int <strong>WaitUntilExistsTimeOut</strong> { public get;
+                public set; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Span" id="WatiN.Core_Span"><strong>public class
+                WatiN.Core.Span ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Span</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Src" id="WatiN.Core_Src"><strong>public class
+                WatiN.Core.Src ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Src</strong> (ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_StringEqualsAndCaseInsensitiv" id=
+                "WatiN.Core_StringEqualsAndCaseInsensitiv"><strong>public class
+                WatiN.Core.StringEqualsAndCaseInsensitiveComparer ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: public override string <strong>ToString</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Style" id="WatiN.Core_Style"><strong>WatiN.Core
+                Style ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.Style</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Style</strong> (IHTMLStyle <i>style</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method: public string <strong>GetAttributeValue</strong> (string <i>
+                  attributeName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method: public override string <strong>ToString</strong> ()
+                </li>
+                <li>Property: string <strong>BackgroundColor</strong> { public get; }
+                </li>
+                <li>Property: string <strong>Color</strong> { public get; }
+                </li>
+                <li>Property: string <strong>CssText</strong> { public get; }
+                </li>
+                <li>Property: string <strong>Display</strong> { public get; }
+                </li>
+                <li>Property: string <strong>FontFamily</strong> { public get; }
+                </li>
+                <li>Property: string <strong>FontSize</strong> { public get; }
+                </li>
+                <li>Property: string <strong>FontStyle</strong> { public get; }
+                </li>
+                <li>Property: string <strong>Height</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_StyleAttribute" id=
+                "WatiN.Core_StyleAttribute"><strong>WatiN.Core StyleAttribute
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.StyleAttribute</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>StyleAttribute</strong> (string
+                <i>styleAttributeName</i>, string <i>value</i>)
+                </li>
+                <li>Constructor: public <strong>StyleAttribute</strong> (string
+                <i>styleAttributeName</i>, Regex <i>regex</i>)
+                </li>
+                <li>Constructor: public <strong>StyleAttribute</strong> (string
+                <i>styleAttributeName</i>, ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected ICompare <strong>comparer</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+                <li>Property: virtual string <strong>AttributeName</strong> { public get;
+                }
+                </li>
+                <li>Property: virtual string <strong>Value</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Table" id="WatiN.Core_Table"><strong>public
+                class WatiN.Core.Table ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Table</strong> (Element <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method: public override TableBody <strong>TableBody</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: override TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_TableBody" id=
+                "WatiN.Core_TableBody"><strong>WatiN.Core TableBody ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.TableBody</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>TableBody</strong> (DomContainer
+                <i>ie</i>, IHTMLTableSection <i>element</i>)
+                </li>
+                <li>Constructor: public <strong>TableBody</strong> (DomContainer
+                <i>ie</i>, ElementFinder <i>finder</i>)
+                </li>
+                <li>Constructor: public <strong>TableBody</strong> (Element
+                <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Blur</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual Button <strong>Button</strong>
+                (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Button <strong>Button</strong>
+                (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Button <strong>Button</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Change</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual CheckBox <strong>CheckBox</strong>
+                (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual CheckBox <strong>CheckBox</strong>
+                (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual CheckBox <strong>CheckBox</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Click</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>ClickNoWait</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual Div <strong>Div</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Div <strong>Div</strong> (Regex <i>
+                  elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Div <strong>Div</strong> (attribute
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>DoubleClick</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual Element <strong>Element</strong>
+                (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Element <strong>Element</strong>
+                (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Element <strong>Element</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual FileUpload
+                <strong>FileUpload</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual FileUpload
+                <strong>FileUpload</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual FileUpload
+                <strong>FileUpload</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEvent</strong> (string <i>
+                  eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Focus</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual Form <strong>Form</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Form <strong>Form</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Form <strong>Form</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public string <strong>GetAttributeValue</strong>
+                (string <i>attributeName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected void <strong>Highlight</strong> (bool
+                <i>doHighlight</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Image <strong>Image</strong>
+                (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Image <strong>Image</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Image <strong>Image</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>KeyDown</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>KeyPress</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>KeyUp</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual Label <strong>Label</strong>
+                (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Label <strong>Label</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Label <strong>Label</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Link <strong>Link</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Link <strong>Link</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Link <strong>Link</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>MouseDown</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>MouseEnter</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>MouseUp</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual Para <strong>Para</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Para <strong>Para</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Para <strong>Para</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual RadioButton
+                <strong>RadioButton</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual RadioButton
+                <strong>RadioButton</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual RadioButton
+                <strong>RadioButton</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual SelectList
+                <strong>SelectList</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual SelectList
+                <strong>SelectList</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual SelectList
+                <strong>SelectList</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Span <strong>Span</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Span <strong>Span</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Span <strong>Span</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Table <strong>Table</strong>
+                (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Table <strong>Table</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual Table <strong>Table</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableRow <strong>TableRow</strong>
+                (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableRow <strong>TableRow</strong>
+                (Regex <i>elementId</i>)
+                </li>
+                <li>Method: public override TableRow <strong>TableRow</strong> (attribute
+                <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TextField
+                <strong>TextField</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TextField
+                <strong>TextField</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TextField
+                <strong>TextField</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitForComplete</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilExists</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilExists</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: virtual ButtonCollection <strong>Buttons</strong> { public
+                get; }
+                </li>
+                <li>Property: virtual CheckBoxCollection <strong>CheckBoxes</strong> {
+                public get; }
+                </li>
+                <li>Property: string <strong>ClassName</strong> { public get; }
+                </li>
+                <li>Property: bool <strong>Complete</strong> { public get; }
+                </li>
+                <li>Property: protected DispHTMLBaseElement
+                <strong>DispHtmlBaseElement</strong> { }
+                </li>
+                <li>Property: virtual DivCollection <strong>Divs</strong> { public get; }
+                </li>
+                <li>Property: DomContainer <strong>DomContainer</strong> { public get; }
+                </li>
+                <li>Property: virtual ElementCollection <strong>Elements</strong> {
+                public get; }
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: bool <strong>Enabled</strong> { public get; }
+                </li>
+                <li>Property: bool <strong>Exists</strong> { public get; }
+                </li>
+                <li>Property: virtual FileUploadCollection <strong>FileUploads</strong> {
+                public get; }
+                </li>
+                <li>Property: virtual FormCollection <strong>Forms</strong> { public get;
+                }
+                </li>
+                <li>Property: protected IHTMLElement <strong>htmlElement</strong> { }
+                </li>
+                <li>Property: object <strong>HTMLElement</strong> { public get; }
+                </li>
+                <li>Property: string <strong>Id</strong> { public get; }
+                </li>
+                <li>Property: virtual ImageCollection <strong>Images</strong> { public
+                get; }
+                </li>
+                <li>Property: string <strong>InnerHtml</strong> { public get; }
+                </li>
+                <li>Property: virtual LabelCollection <strong>Labels</strong> { public
+                get; }
+                </li>
+                <li>Property: virtual LinkCollection <strong>Links</strong> { public get;
+                }
+                </li>
+                <li>Property: Element <strong>NextSibling</strong> { public get; }
+                </li>
+                <li>Property: string <strong>OuterHtml</strong> { public get; }
+                </li>
+                <li>Property: string <strong>OuterText</strong> { public get; }
+                </li>
+                <li>Property: virtual ParaCollection <strong>Paras</strong> { public get;
+                }
+                </li>
+                <li>Property: Element <strong>Parent</strong> { public get; }
+                </li>
+                <li>Property: Element <strong>PreviousSibling</strong> { public get; }
+                </li>
+                <li>Property: virtual RadioButtonCollection <strong>RadioButtons</strong>
+                { public get; }
+                </li>
+                <li>Property: virtual SelectListCollection <strong>SelectLists</strong> {
+                public get; }
+                </li>
+                <li>Property: virtual SpanCollection <strong>Spans</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+                <li>Property: virtual TableCellCollection <strong>TableCells</strong> {
+                public get; }
+                </li>
+                <li>Property: override TableRowCollection <strong>TableRows</strong> {
+                public get; }
+                </li>
+                <li>Property: virtual TableCollection <strong>Tables</strong> { public
+                get; }
+                </li>
+                <li>Property: string <strong>TagName</strong> { public get; }
+                </li>
+                <li>Property: virtual string <strong>Text</strong> { public get; }
+                </li>
+                <li>Property: string <strong>TextAfter</strong> { public get; }
+                </li>
+                <li>Property: string <strong>TextBefore</strong> { public get; }
+                </li>
+                <li>Property: virtual TextFieldCollection <strong>TextFields</strong> {
+                public get; }
+                </li>
+                <li>Property: string <strong>Title</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_TableBodyCollection" id=
+                "WatiN.Core_TableBodyCollection"><strong>WatiN.Core
+                TableBodyCollection ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.TableBodyCollection</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>TableBodyCollection</strong>
+                (DomContainer <i>domContainer</i>, ArrayList <i>elements</i>)
+                </li>
+                <li>Constructor: public <strong>TableBodyCollection</strong>
+                (DomContainer <i>domContainer</i>, ElementFinder <i>finder</i>)
+                </li>
+                <li>Field: protected DomContainer <strong>domContainer</strong>
+                </li>
+                <li>Method <i>(i)</i>: protected ArrayList <strong>DoFilter</strong>
+                (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: public bool <strong>Exists</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public bool <strong>Exists</strong> (Regex
+                <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public bool <strong>Exists</strong> (attribute <i>
+                  findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public Enumerator <strong>GetEnumerator</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Property: protected ArrayList <strong>Elements</strong> { }
+                </li>
+                <li>Property: TableBody <strong>this</strong> [int <i>index</i>] { public
+                get; }
+                </li>
+                <li>Property: int <strong>Length</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_TableCell" id=
+                "WatiN.Core_TableCell"><strong>public class WatiN.Core.TableCell
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>TableCell</strong> (Element
+                <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: int <strong>Index</strong> { public get; }
+                </li>
+                <li>Property: TableRow <strong>ParentTableRow</strong> { public get; }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_TableRow" id=
+                "WatiN.Core_TableRow"><strong>public class WatiN.Core.TableRow
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int
+                <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>TableRow</strong> (Element
+                <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (string <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableBody
+                <strong>TableBody</strong> (attribute <i>findBy</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (string <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual TableCell
+                <strong>TableCell</strong> (Regex <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Table <strong>ParentTable</strong> { public get; }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+                <li>Property: virtual TableBodyCollection <strong>TableBodies</strong> {
+                public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_TableRowFinder" id=
+                "WatiN.Core_TableRowFinder"><strong>public class
+                WatiN.Core.TableRowFinder ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method: public override bool <strong>Compare</strong> (object
+                <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>TableRowFinder</strong> (ICompare
+                <i>comparer</i>, int <i>inColumn</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method: public override bool <strong>Compare</strong> (IAttributeBag
+                <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Text" id="WatiN.Core_Text"><strong>public class
+                WatiN.Core.Text ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Text</strong> (ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_TextField" id=
+                "WatiN.Core_TextField"><strong>public class WatiN.Core.TextField
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>TextField</strong> (Element
+                <i>element</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>FireEventNoWait</strong>
+                (string <i>eventName</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>Flash</strong> (int
+                <i>numberOfFlashes</i>)
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public void <strong>WaitUntilRemoved</strong> (int
+                <i>timeout</i>)
+                </li>
+                <li>Property: static ArrayList <strong>ElementTags</strong> { public get;
+                }
+                </li>
+                <li>Property: Style <strong>Style</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Title" id="WatiN.Core_Title"><strong>public
+                class WatiN.Core.Title ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Title</strong> (ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Url" id="WatiN.Core_Url"><strong>public class
+                WatiN.Core.Url ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Url</strong> (ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core_Value" id="WatiN.Core_Value"><strong>public
+                class WatiN.Core.Value ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (object <i>ihtmlelement</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (string <i>value</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected string <strong>GetAttribute</strong>
+                (IHTMLElement <i>element</i>, string <i>attributeName</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>Value</strong> (ICompare <i>comparer</i>)
+                </li>
+                <li>Field: protected attribute <strong>andAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>lastAddedOrAttribute</strong>
+                </li>
+                <li>Field: protected attribute <strong>orAttribute</strong>
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>And</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Compare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual bool <strong>doCompare</strong>
+                (IAttributeBag <i>attributeBag</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>LockCompare</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public attribute <strong>Or</strong> (attribute
+                <i>attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void
+                <strong>UnLockCompare</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core.DialogHandlers_SecurityAlertD" id=
+                "WatiN.Core.DialogHandlers_SecurityAlertD"><strong>WatiN.Core.DialogHandlers
+                SecurityAlertDialogHandler ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class
+                <strong>WatiN.Core.DialogHandlers.SecurityAlertDialogHandler</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>SecurityAlertDialogHandler</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method: public virtual bool <strong>HandleDialog</strong> (Window <i>
+                  window</i>)
+                </li>
+                <li>Method: protected virtual bool <strong>IsSecurityAlertDialog</strong>
+                (Window <i>window</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core.Exceptions_ElementNotFoundExc" id=
+                "WatiN.Core.Exceptions_ElementNotFoundExc"><strong>public class
+                WatiN.Core.Exceptions.ElementNotFoundException ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>ElementNotFoundException</strong> (string
+                <i>tagName</i>, string <i>attributeName</i>, string
+                <i>value</i>, Exception <i>innerexception</i>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core.Exceptions_ReEntryException" id=
+                "WatiN.Core.Exceptions_ReEntryException"><strong>WatiN.Core.Exceptions
+                ReEntryException ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.Exceptions.ReEntryException</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>ReEntryException</strong> (attribute <i>
+                  attribute</i>)
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual Exception
+                <strong>GetBaseException</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual void <strong>GetObjectData</strong>
+                (SerializationInfo <i>info</i>, StreamingContext
+                <i>context</i>)
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+                <li>Property: virtual string <strong>HelpLink</strong> { public get;
+                public set; }
+                </li>
+                <li>Property: protected int <strong>HResult</strong> { }
+                </li>
+                <li>Property: Exception <strong>InnerException</strong> { public get; }
+                </li>
+                <li>Property: virtual string <strong>Message</strong> { public get; }
+                </li>
+                <li>Property: virtual string <strong>Source</strong> { public get; public
+                set; }
+                </li>
+                <li>Property: virtual string <strong>StackTrace</strong> { public get; }
+                </li>
+                <li>Property: MethodBase <strong>TargetSite</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core.Exceptions_WatiNException" id=
+                "WatiN.Core.Exceptions_WatiNException"><strong>public class
+                WatiN.Core.Exceptions.WatiNException ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Property: override string <strong>Message</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>WatiNException</strong> (string
+                <i>message</i>, Exception <i>innerexception</i>)
+                </li>
+                <li>Property: virtual string <strong>Message</strong> { public get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core.Interfaces_IAttributeBag" id=
+                "WatiN.Core.Interfaces_IAttributeBag"><strong>WatiN.Core.Interfaces
+                IAttributeBag ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public interface <strong>WatiN.Core.Interfaces.IAttributeBag</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: string <strong>GetValue</strong> (string
+                <i>attributename</i>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core.Interfaces_IElementsContainer" id=
+                "WatiN.Core.Interfaces_IElementsContainer"><strong>public interface
+                WatiN.Core.Interfaces.IElementsContainer ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul type="disc">
+                <li>Method: TableCell <strong>TableCell</strong> (string
+                <i>elementId</i>, int <i>occurrence</i>)
+                </li>
+                <li>Method: TableCell <strong>TableCell</strong> (Regex <i>elementId</i>,
+                int <i>occurrence</i>)
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Method: TableBody <strong>TableBody</strong> (string
+                <i>elementId</i>)
+                </li>
+                <li>Method: TableBody <strong>TableBody</strong> (Regex <i>elementId</i>)
+                </li>
+                <li>Method: TableBody <strong>TableBody</strong> (attribute
+                <i>findBy</i>)
+                </li>
+                <li>Method: TableCell <strong>TableCell</strong> (string
+                <i>elementId</i>, int <i>index</i>)
+                </li>
+                <li>Method: TableCell <strong>TableCell</strong> (Regex <i>elementId</i>,
+                int <i>index</i>)
+                </li>
+                <li>Property: TableBodyCollection <strong>TableBodies</strong> { public
+                get; }
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p align="center">
+                <a name="WatiN.Core.Logging_NoLog" id=
+                "WatiN.Core.Logging_NoLog"><strong>WatiN.Core.Logging NoLog
+                ()</strong></a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                n/a
+              </p>
+            </td>
+            <td>
+              <p>
+                public class <strong>WatiN.Core.Logging.NoLog</strong>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                --&gt; NONE &lt;--
+              </p>
+            </td>
+            <td>
+              <ul type="disc">
+                <li>Constructor: public <strong>NoLog</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual bool <strong>Equals</strong>
+                (object <i>obj</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected virtual void <strong>Finalize</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual int <strong>GetHashCode</strong> ()
+                </li>
+                <li>Method <i>(i)</i>: public Type <strong>GetType</strong> ()
+                </li>
+                <li>Method: public virtual void <strong>LogAction</strong> (string
+                <i>message</i>)
+                </li>
+                <li>Method <i>(i)</i>: protected object <strong>MemberwiseClone</strong>
+                ()
+                </li>
+                <li>Method <i>(i)</i>: public virtual string <strong>ToString</strong> ()
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+      <p class="endnav">
+        <a href="#top">Top</a>
+      </p>
+    </div>

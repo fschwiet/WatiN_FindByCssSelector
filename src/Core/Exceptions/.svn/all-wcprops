@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions
+END
+BrowserNotFoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/BrowserNotFoundException.cs
+END
+MissingAlertException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/MissingAlertException.cs
+END
+HtmlDialogNotFoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/HtmlDialogNotFoundException.cs
+END
+JavaScriptException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/JavaScriptException.cs
+END
+ElementNotFoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/ElementNotFoundException.cs
+END
+SelectListItemNotFoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/SelectListItemNotFoundException.cs
+END
+ReferenceCountException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/ReferenceCountException.cs
+END
+FrameNotFoundException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/FrameNotFoundException.cs
+END
+InvalidAttributeException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/InvalidAttributeException.cs
+END
+ElementDisabledException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/ElementDisabledException.cs
+END
+WatiNException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/WatiNException.cs
+END
+ElementExceptionBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/ElementExceptionBase.cs
+END
+TimeoutException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/TimeoutException.cs
+END
+ElementReadOnlyException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/ElementReadOnlyException.cs
+END
+ReEntryException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/ReEntryException.cs
+END
+RunScriptException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/1106/trunk/src/Core/Exceptions/RunScriptException.cs
+END

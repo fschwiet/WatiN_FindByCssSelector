@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/watin/!svn/ver/1109/trunk/src/UnitTests
+END
+TextFieldTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TextFieldTests.cs
+END
+FrameTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/FrameTests.cs
+END
+RadioButtonTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/RadioButtonTests.cs
+END
+ControlCollectionTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ControlCollectionTests.cs
+END
+LinkTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/LinkTests.cs
+END
+SpanTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/SpanTests.cs
+END
+WatiN.Core.UnitTests.dll.config
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/151/trunk/src/UnitTests/WatiN.Core.UnitTests.dll.config
+END
+HtmlColorTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/HtmlColorTests.cs
+END
+FormTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/FormTests.cs
+END
+TableBodyTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TableBodyTests.cs
+END
+IdHinterTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/IdHinterTests.cs
+END
+SelectListTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/SelectListTests.cs
+END
+ButtonTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ButtonTests.cs
+END
+PageTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/PageTests.cs
+END
+BaseElementCollectionTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/BaseElementCollectionTest.cs
+END
+LabelTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/LabelTests.cs
+END
+LoggerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/LoggerTests.cs
+END
+TableRowTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TableRowTests.cs
+END
+HTMLDialogFindByTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/HTMLDialogFindByTests.cs
+END
+ElementOfTypeTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/watin/!svn/ver/1108/trunk/src/UnitTests/ElementOfTypeTests.cs
+END
+ControlTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ControlTests.cs
+END
+ImageTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ImageTests.cs
+END
+BrowserTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/BrowserTests.cs
+END
+HTMLDialogTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/HTMLDialogTests.cs
+END
+FileUploadTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/FileUploadTests.cs
+END
+ElementTagTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ElementTagTests.cs
+END
+IFramesTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/IFramesTests.cs
+END
+TableCellTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TableCellTests.cs
+END
+NoFramesTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/NoFramesTest.cs
+END
+NativeElementFinderTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/NativeElementFinderTests.cs
+END
+ElementTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ElementTests.cs
+END
+FrameCrossDomainTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/FrameCrossDomainTests.cs
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/707/trunk/src/UnitTests/App.config
+END
+SettingsTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/SettingsTests.cs
+END
+DotNet35Tests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DotNet35Tests.cs
+END
+DefaultSettingsTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DefaultSettingsTests.cs
+END
+AreaTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/AreaTests.cs
+END
+ElementStyleTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ElementStyleTests.cs
+END
+UnitTests.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1107/trunk/src/UnitTests/UnitTests.csproj
+END
+WatiNSanityTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/WatiNSanityTests.cs
+END
+DocumentTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DocumentTests.cs
+END
+FramesetWithinFrameSetTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/FramesetWithinFrameSetTests.cs
+END
+FindTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/FindTests.cs
+END
+DomContainerTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DomContainerTests.cs
+END
+ComponentExtensionsTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ComponentExtensionsTests.cs
+END
+DivTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/DivTests.cs
+END
+ParaTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/ParaTests.cs
+END
+CheckBoxTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/CheckBoxTests.cs
+END
+TableTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TableTests.cs
+END

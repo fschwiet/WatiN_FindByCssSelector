@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 107
+.MySCMServerInfo
+bin
+obj
+*.resharperoptions
+_ReSharper.*
+*.user
+*.suo
+Doc
+_UpgradeReport_Files
+*.resharper
+
+END

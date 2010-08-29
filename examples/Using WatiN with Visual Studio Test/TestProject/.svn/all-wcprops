@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/watin/!svn/ver/1091/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject
+END
+FailingTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/watin/!svn/ver/931/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject/FailingTests.cs
+END
+AuthoringTests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/watin/!svn/ver/931/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject/AuthoringTests.txt
+END
+TestProject.sln
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/watin/!svn/ver/931/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject/TestProject.sln
+END
+TestProject.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/watin/!svn/ver/931/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject/TestProject.csproj
+END
+TestProject.vsmdi
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/watin/!svn/ver/931/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject/TestProject.vsmdi
+END
+LocalTestRun.testrunconfig
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/watin/!svn/ver/931/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject/LocalTestRun.testrunconfig
+END
+PassingTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/watin/!svn/ver/931/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject/PassingTests.cs
+END
+IEStaticInstanceHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/watin/!svn/ver/1091/trunk/examples/Using%20WatiN%20with%20Visual%20Studio%20Test/TestProject/IEStaticInstanceHelper.cs
+END

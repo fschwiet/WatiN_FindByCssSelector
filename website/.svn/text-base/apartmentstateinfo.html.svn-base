@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>WatiN Apartmentstate Info</title>
+        <meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+        <meta content="watin, test, C#, web, .Net, framework, html, dom, watir" name="Keywords">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta content="Global" name="Distribution">
+        <meta content="Jeroen van Menen" name="Author">
+        <meta content="index,follow" name="Robots">
+        <LINK href="images/BrightSide.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- wrap starts here -->
+        <div id="wrap">
+            <div id="header">
+                <h1 id="logo"><span class="green"><FONT color="#6297bc">WatiN</FONT></span></h1>
+                <h2 id="slogan">Web Application Testing In .Net</h2>
+                <!-- Menu Tabs -->
+                <ul>
+                    <li>
+                        <A href="index.html"><span>Home</span></A>
+                    <li>
+                        <a href="http://sourceforge.net/project/showfiles.php?group_id=167632"><span>Downloads</span></a>
+                    <li id="current">
+                        <A href="documentation.html"><span>Documentation</span></A>
+                    <li>
+                        <A href="contribute.html"><span>Contribute</span></A>
+                    <li>
+                        <A href="support.html"><span>Support</span></A>
+                    <li>
+                        <a href="team.html"><span>Team</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- content-wrap starts here -->
+            <div id="content-wrap">
+                <div id="main">
+                    <h1>WatiN <span class="green">and</span> Thread.ApartmentState</h1>
+                    <p>This article explains why you need to set the Thread.Apartmentstate to STA when 
+                        using WatiN. If you use a (test) runner which is not mentioned on this page but 
+                        which needs some special setup to set the ApartmentState to STA, please let me 
+                        know so I can add the info to this page.</p>
+                    <p><strong>Index</strong></p>
+                    <ol start="1" type="1">
+                        <li>
+                            <span>Why is setting the ApartmentState needed in the first place?</span>
+                        <li>
+                            <span>Differences in ApartmentState between .Net 1.1 and .Net 2.0.</span>
+                        <li>
+                            <span>Implications.</span>
+                        <li>
+                            <span>Behaviour of WatiN when Thread is not an STA Thread.</span>
+                        <li>
+                            <span><a href="#consoleOrWinForm">Using WatiN in a console or WinForms application</a>.</span>
+                        <li>
+                            <span><a href="#mbunit">Using WatiN and MBUnit</a>.</span>
+                        <li>
+                            <span><a href="#nunit">Using WatiN and NUnit</a>.</span>
+                        <li>
+                            <span><a href="#vs2005">Using WatiN and Visual Studio 2005 test runner</a>.</span>
+                        <li>
+                            <span><a href="#testdriven">Using WatiN and TestDriven.Net in VS 2003 and VS2005</a>.</span>
+                        <li>
+                            <span><a href="#sharpdevelop">Using WatiN and SharpDevelop&#8217;s NUnit test runner</a>.</span>
+                        <li>
+                            <span><a href="#fitnesse">Using WatiN and Fitnesse</a>.</span>
+                    </ol>
+					<br>
+                    <p><strong>Why is setting the ApartmentState needed in the first place?</strong></p>
+                    <p>Copied from <a href="http://msdn2.microsoft.com/en-us/library/system.threading.apartmentstate.aspx"
+                            target="_blank" title="http://msdn2.microsoft.com/en-us/library/system.threading.apartmentstate.aspx">
+                            MSDN</a>:</p>
+                    <p><i>&#8220;Because COM classes use apartments, the common language runtime needs to 
+                            create and initialize an apartment when calling a COM object in a COM interop 
+                            situation. A managed thread can create and enter a single-threaded apartment 
+                            (STA) that allows only one thread, or a multithreaded apartment (MTA) that 
+                            contains one or more threads.&#8221;.</i></p>
+                    <p>Since Internet Explorer is not Thread safe we need to use STA.</p>
+                    <br>
+					<p><strong>Differences in ApartmentState between .Net 1.1 and .Net 2.0</strong></p>
+                    <p>Digging through MSDN I found out that Microsoft not only has changed the calling 
+                        convention for setting or getting the ApartmentState, it also changed the 
+                        default ApartmentState for a Thread in .Net 2.0. (see <a href="http://msdn.microsoft.com/netframework/programming/breakingchanges/runtime/clr.aspx"
+                            target="_blank">http://msdn.microsoft.com/netframework/programming/breakingchanges/runtime/clr.aspx</a>
+                        and search for STAThreadAttribute).</p>
+                    <p>In .Net 1.1 the default ApartmentState of a Thread is Unknown. A running Thread 
+                        with this ApartmentState can be set to STA or MTA, but only once. Trying to set 
+                        the Apartment state of a running Thread from MTA to STA (or vice versa) 
+                        doesn&#8217;t have any effect, it remains MTA (or STA).</p>
+                    <p>In .Net 2.0 the default ApartmentState of a Thread is MTA. Trying to reset the 
+                        ApartmentState of a running Thread from MTA to STA (or vice versa) 
+                        doesn&#8217;t have any effect, it remains MTA. Setting the ApartmentState to 
+                        Unknown or STA instead of MTA, can ONLY be done BEFORE the Thread starts.
+                    </p>
+                    <br>
+					<p><strong>Implications</strong></p>
+                    <p>Using WatiN works fine in a console or GUI application when you apply the 
+                        [STAThread] attribute to the main method (the sole entry point of the 
+                        application). This way the main Thread runs as STA and all goes well. When 
+                        using a runner like MBUnit, NUnit or any other runner that starts the main 
+                        Thread, your code/tests depend upon the ApartmentState the runner started with.
+                    </p>
+                    <br>
+					<p><strong>Behaviour of WatiN when Thread is not an STA Thread.</strong></p>
+                    <p>WatiN 0.8.0 (and later):</p>
+                    <p>Will throw a ThreadStateException when you create an instance of the 
+                        WatiN.Core.IE class, to help you remind to set the ApartmentState to STA.</p>
+                    <p>Earlier versions:</p>
+                    <p>You will get an &#8220;Invalid cast exception&#8221; being thrown when you 
+                        create an instance of the WatiN.Core.IE class.</p>
+                    <br>
+					<p><a name="consoleOrWinForm"></a><strong>Using WatiN in a console or WinForms 
+                            application</strong></p>
+                    <p>When using WatiN from a console or WinForms application, you need to apply the 
+                        [STAThread] attribute to the Main method (the entry point of the application).</p>
+                    <p><code>using System;<br>
+                            using WatiN.Core;<br>
+                            &nbsp;<br>
+                            namespace WatiNGettingStarted<br>
+                            {<br>
+                            &nbsp;class WatiNConsoleExample<br>
+                            &nbsp;{<br>
+                            &nbsp;&nbsp;[STAThread]<br>
+                            &nbsp;&nbsp;static void Main(string[] args)<br>
+                            &nbsp;&nbsp;{<br>
+                            &nbsp;&nbsp;&nbsp;// Your test code;<br>
+                            &nbsp;&nbsp;}<br>
+                            &nbsp;}<br>
+                            } </code>
+                    </p>
+                    <p>See the <a href="gettingstarted.html">Getting Started</a> article for a full 
+                        console application example.</p>
+                    <br>
+					<p><a name="mbunit"></a><strong>Using WatiN and MBUnit</strong></p>
+                    <p>Setting the ApartmentState for a <a href="http://www.mertner.com/confluence/display/MbUnit/MbUnit+Home">
+                            MBUnit</a> TestFixture is quit simple. Following is a basic example copied 
+                        from <a href="http://www.mertner.com/confluence/display/MbUnit/FixtureThreadApartmentState"
+                            target="_blank" title="http://www.mertner.com/confluence/display/MbUnit/FixtureThreadApartmentState">
+                            http://www.mertner.com/confluence/display/MbUnit/FixtureThreadApartmentState</a>.
+                    </p>
+                    <p><code>[TestFixture(ApartmentState = ApartmentState.STA)]<br>
+                            public class WatiNTestFixture<br>
+                            {<br>
+                            &nbsp;[Test]<br>
+                            &nbsp;public void WatiNTest()<br>
+                            &nbsp;{<br>
+                            &nbsp;&nbsp;&nbsp;// Your test code;<br>
+                            &nbsp;}<br>
+                            } </code>
+					</p>
+					<br>
+                    <p><a name="nunit"></a><strong>Using WatiN and NUnit</strong></p>
+                    <p>First you need to create a config file for your test assembly. The naming of 
+                        this file depends on how you use NUnit (more info <a href="http://nunit.com/blogs/?p=9" target="_blank">
+                            here</a>):</p>
+                    <ul>
+                        <li>
+                            <span>If you load a test assembly directly, such as mytests.dll, the config file must 
+                            be named mytests.dll.config located in the same directory mytests.dll is in.</span>
+                        <li>
+                            <span>If you load an NUnit project, such as mytests.nunit, the config file must be 
+                            named mytests.config.</span>
+                        <li>
+                            <span>If you use NUnit&#8217;s Visual Studio support to load a Visual Studio project 
+                            or solution, such as mytests.csproj or mytests.sln, the config file must be 
+                            named mytests.config.</span>
+                        </li>
+                    </ul>
+                    <p>Next, paste the following XML into the config. The trick is in the &lt;add 
+                        key="ApartmentState" value="STA" /&gt; part. nunit-gui and nunit-console will 
+                        now run all your tests in the assembly on a single threaded apartment Thread.</p>
+                    <p><code>&lt;?xml version="1.0" encoding="utf-8" ?&gt;<br>
+						&lt;configuration&gt;<br>
+						&nbsp; &lt;configSections&gt;<br>
+						&nbsp;&nbsp; &lt;sectionGroup name="NUnit"&gt;<br>
+						&nbsp;&nbsp;&nbsp; &lt;section name="TestRunner" type="System.Configuration.NameValueSectionHandler"/&gt;<br>
+						&nbsp;&nbsp; &lt;/sectionGroup&gt;<br>
+						&nbsp; &lt;/configSections&gt;<br>
+						&nbsp; &lt;NUnit&gt;<br>
+						&nbsp;&nbsp; &lt;TestRunner&gt;<br>
+						&nbsp;&nbsp;&nbsp; &lt;!-- Valid values are STA,MTA. Others ignored. --&gt;<br>
+						&nbsp;&nbsp;&nbsp; &lt;add key="ApartmentState" value="STA" /&gt;<br>
+						&nbsp;&nbsp; &lt;/TestRunner&gt;<br>
+						&nbsp; &lt;/NUnit&gt;<br>
+						&lt;/configuration&gt;</code>
+					</p>
+                    <p>Following is some background information about the differences between the 
+                        behaviour of <a href="http://www.nunit.org/" target="_blank">NUnit</a>&nbsp; 
+                        for .Net 1.1. and .Net 2.0 (keep the explanation about&nbsp; &#8220;Differences 
+                        in ApartmentState between .Net 1.1 and .Net 2.0&#8221; in mind).
+                    </p>
+                    <p>To run the unit tests, NUnit creates Threads with the default ApartmentState. So 
+                        if you use WatiN in a NUnit .Net 1.1 environment, a Thread with the 
+                        ApartmentState Unknown is created. This makes it possible to set the 
+                        ApartmentState (only ones) to STA. You could do this, for instance, in your 
+                        TestFixtureSetup function by adding the following line of code:</p>
+                    <p><code>System.Threading.Thread.CurrentThread.ApartmentState = 
+                        System.Threading.ApartmentState.STA;</code>
+					</p>
+                    <p>But Using WatiN in a NUnit .net 2.0 environment, this code doesn&#8217;t work, 
+                        even if you make the syntax .Net 2.0 compliant:</p>
+                    <p><code>
+                        System.Threading.Thread.Currentthread.SetApartmentState(System.Threading.ApartmentStat.STA);</code>
+					</p>
+                    <p>This is caused by the fact that NUnit now creates a Thread with the 
+                        ApartmentState set to MTA (the .Net 2.0 default value).</p>
+                    <p>So my advise: if you develop in a .Net 1.1 environment, use the config file to 
+                        force the right ApartmentState. This will give you a hassle free migration to 
+                        the .Net 2.0 framework (regarding the use of WatiN).</p>
+                    <br>
+					<p><a name="vs2005"></a><strong>Using WatiN and Visual Studio 2005 test runner.</strong></p>
+                    <p>No special tricks needed. The Visual Studio 2005 Team System test runner runs 
+                        all it&#8217;s tests in STA mode by default.</p>
+                    <br>
+					<p><a name="testdriven"></a><strong>Using WatiN and TestDriven.Net in VS 2003 and VS 2005.</strong></p>
+                    <p>No special tricks needed. <a href="http://www.testdriven.net/" target="_blank">TestDriven.Net</a> runs all it&#8217;s tests in STA mode by default. <br>
+					When TestDriven.Net invokes MbUnit tests, MbUnit overrides the ApartmentState, setting it to MTA by default. So you do need to specify the ApartmentState in the fixture attribute:</p>
+<p><code>
+[TestFixture(ApartmentState = ApartmentState.STA)]
+</p></code>
+<p>
+See also <a href="#mbunit">using WatiN and MBUnit</a>.
+</p>
+                    <br>
+					<p><a name="sharpdevelop"></a><strong>Using WatiN and SharpDevelop&#8217;s NUnit test runner.</strong></p>
+                    <p>As of SharpDevelop 2.1 Beta 3, running test in STA mode is supported. By default 
+                        SharpDevelop runs tests in the MTA. This is the default behaviour of <a href="http://nunit.org">
+                            NUnit</a> which is what SharpDevelop uses. To run your tests in an STA you 
+                        can create an app.config file for your test project as shown below:</p>
+                    <p><code>
+						&lt;configuration&gt; <br>
+						&nbsp;&lt;configSections&gt;<br>
+						&nbsp;&nbsp;&lt;sectionGroup name="NUnit"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;section name="TestRunner"	type="System.Configuration.NameValueSectionHandler" /&gt;<br>
+						&nbsp;&nbsp;&lt;/sectionGroup&gt;<br>
+						&nbsp;&lt;/configSections&gt;<br>
+						&nbsp;&lt;NUnit&gt;<br>
+						&nbsp;&lt;TestRunner&gt;<br>
+						&nbsp;&nbsp;&lt;!-- Valid values are STA,MTA. Others ignored. --&gt;<br>
+						&nbsp;&nbsp;&lt;add key="ApartmentState" value="STA" /&gt;<br>
+						&nbsp;&lt;/TestRunner&gt;<br>
+						&nbsp;&lt;/NUnit&gt;<br>
+						&lt;/configuration&gt;</code>
+					</p>
+                    <p><a name="fitnesse"></a><b>Using WatiN and FitNesse.</b></p>
+                    <p>To use WatiN with FitNesse, you have two options:</p>
+                    <ul>
+                        <li>
+                            <span>Write WatiN code in your Fixtures.</span>
+                        <li>
+                            <span>Use <a href="http://watinfixture.sourceforge.net/" target="_blank">WatiNFixture</a>, 
+                            written and maintained by Jeff Parker.</span>
+						</li>
+                    </ul>
+                    <p>In both situations you need to modify and recompile the .Net fitserver to run 
+                        your tests in an STA.</p>
+                    <p>Open de main.cs file of the FitServer project and apply the STAThread attribute 
+                        to the main methode. The code will then look like this:</p>
+                    <p><code>
+						// Modified or written by Object Mentor, Inc. for inclusion with FitNesse.<br>
+	                    // Copyright (c) 2002 Cunningham &amp; Cunningham, Inc.<br>
+	                    // Released under the terms of the GNU General Public License version 2 or later.<br>
+	                    using System.Threading;<br>
+	                    
+						namespace FitServer<br>
+	                    {<br>
+	                    &nbsp; public class FitServerMain<br>
+	                    &nbsp; {<br>
+	                    &nbsp; &nbsp; [STAThread]<br>
+	                    &nbsp; &nbsp; public static int Main(string[] CommandLineArguments)<br>
+	                    &nbsp; &nbsp; {<br>
+	                    
+	                    &nbsp; &nbsp; &nbsp; fitnesse.fitserver.FitServer fitServer = new fitnesse.fitserver.FitServer();<br>
+	                    &nbsp; &nbsp; &nbsp; fitServer.Run(CommandLineArguments);<br>
+	                    &nbsp; &nbsp; &nbsp; return fitServer.ExitCode();<br>
+	                    &nbsp; &nbsp; }<br>
+	                    &nbsp; }<br>
+	                    }</code>
+					</p>
+                </div>
+                <div id="rightbar">
+                    <div id="sidebar">
+                        <h1>Quick <span class="green">Links</span></h1>
+                        <ul class="sidemenu">
+                            <li>
+                                <A href="gettingstarted.html">Getting started</A>
+                            <li>
+                                <A href="http://watintestrecord.sourceforge.net/">STA AppartmentState</A>
+                            <li>
+                                <A href="htmlelementmapping.html">HTML mapping list</A>
+                            <li>
+                                <a href="roadmap.html">Roadmap</a>
+                            <li>
+                                <A href="faq.html">FAQ</A>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- content-wrap ends here --></div>
+            <!-- footer starts here -->
+            <div id="footer">
+        <div class="footer-left" style="WIDTH: 50%; HEIGHT: 37px">
+          <p class="align-left">
+            © 2007 <strong>Jeroen van Menen</strong> | Design by <a href=
+            "http://www.styleshout.com/">styleshout</a>
+          </p>
+        </div>
+        <div class="footer-right" style="WIDTH: 40%; HEIGHT: 54px">
+			<p class="align-right">
+				<A href="index.html">Home</A>&nbsp;|&nbsp; <A href="http://sourceforge.net/projects/watin/">
+                    WatiN on SourceForge</A>&nbsp;|&nbsp; <A href="http://sourceforge.net/export/rss2_project.php?group_id=167632">
+                    RSS Feed</A>s
+			</p>
+			<p class="align-right">
+				<a href="http://sourceforge.net"><img border="0" width="125"
+					height="37" id="_x0000_i1025" src=
+					"http://sflogo.sourceforge.net/sflogo.php?group_id=167632&amp;type=2"
+					alt="SourceForge.net Logo" name="_x0000_i1025"></a>
+            </p>
+        </div>
+            </div>
+            <!-- footer ends here -->
+            <!-- wrap ends here --></div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3606670-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+    </body>
+</html>

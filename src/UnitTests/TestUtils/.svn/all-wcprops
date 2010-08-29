@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TestUtils
+END
+BaseWatiNTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TestUtils/BaseWatiNTest.cs
+END
+BaseWithBrowserTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TestUtils/BaseWithBrowserTests.cs
+END
+HtmlInjector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TestUtils/HtmlInjector.cs
+END
+StealthSettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TestUtils/StealthSettings.cs
+END
+IBrowserTestManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TestUtils/IBrowserTestManager.cs
+END
+MockAttributeBag.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/TestUtils/MockAttributeBag.cs
+END

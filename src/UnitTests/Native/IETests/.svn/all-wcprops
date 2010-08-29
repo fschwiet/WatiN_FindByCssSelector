@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/Native/IETests
+END
+IEBrowserTestManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/Native/IETests/IEBrowserTestManager.cs
+END
+IEDocumentTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/Native/IETests/IEDocumentTests.cs
+END
+IETests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/Native/IETests/IETests.cs
+END
+ShellWindows2Tests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/watin/!svn/ver/1106/trunk/src/UnitTests/Native/IETests/ShellWindows2Tests.cs
+END

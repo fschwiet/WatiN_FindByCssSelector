@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/watin/!svn/ver/964/trunk/tools/NAnt/lib
+END
+NUnitCore.dll
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/watin/!svn/ver/40/trunk/tools/NAnt/lib/NUnitCore.dll
+END
+ICSharpCode.SharpZipLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/ICSharpCode.SharpZipLib.dll
+END
+ICSharpCode.SharpCvsLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/ICSharpCode.SharpCvsLib.dll
+END
+ICSharpCode.SharpCvsLib.Console.dll
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/watin/!svn/ver/117/trunk/tools/NAnt/lib/ICSharpCode.SharpCvsLib.Console.dll
+END
