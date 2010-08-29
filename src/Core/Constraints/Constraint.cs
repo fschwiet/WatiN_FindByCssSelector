@@ -257,7 +257,7 @@ namespace WatiN.Core.Constraints
         /// Tracks when a constraint's Match method has been entered by the current thread.
         /// </summary>
         /// <exception cref="ReEntryException">Thrown if reentrance has been detected</exception>
-        private void EnterMatch()
+        protected virtual void EnterMatch()
         {
             if (enteredConstraints == null)
             {
@@ -275,7 +275,7 @@ namespace WatiN.Core.Constraints
         /// <summary>
         /// Tracks when a constraint's Match method has been exited by the current thread.
         /// </summary>
-        private void ExitMatch()
+        protected virtual void ExitMatch()
         {
             if (enteredConstraints != null)
                 enteredConstraints.Remove(this);
