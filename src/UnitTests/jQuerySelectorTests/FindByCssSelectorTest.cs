@@ -30,7 +30,10 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
 
             Browser.GoTo("http://google.com/");
 
-            Browser.FindByCssSelector<TextField>("#main form input[title='Google Search']").WaitUntilExists(5);
+            Browser.FindByCssSelector<TextField>("#main form input[title='Google Search']").TypeText("watin");
+            Browser.FindByCssSelector<Element>("#main input[type='submit'][value='Google Search']").Click();
+
+            Browser.FindByCssSelector<Element>(":contains('WatiN Home')");
         }
     }
 }
