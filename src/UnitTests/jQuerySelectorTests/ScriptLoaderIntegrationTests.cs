@@ -11,7 +11,7 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
         [STAThread]
         [TestCase("IE")]
         [TestCase("FireFox")]
-        public void TestJQueryInstallScript_loadsJQueryIfNotLoaded(string browserType)
+        public void JQueryInstallScript_loads_jQuery_if_not_loaded(string browserType)
         {
             UseBrowser(browserType);
 
@@ -34,7 +34,7 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
         [STAThread]
         [TestCase("IE")]
         [TestCase("FireFox")]
-        public void TestJQueryInstallScript_doesNotReloadJQuery(string browserType)
+        public void JQueryInstallScript_does_not_reload_jQuery(string browserType)
         {
             UseBrowser(browserType);
 
@@ -54,6 +54,7 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
             string js = loader.GetJQueryInstallScript();
             Browser.RunScript(js);
 
+            Assert.That(Browser.Eval("window.jQuery.isThisTheOriginal$"), Is.EqualTo("true"));  // we will verify this is not overwritten
             Assert.That(Browser.Eval("window.$.isThisTheOriginal$"), Is.EqualTo("true"));  // we will verify this is not overwritten
         }
 
@@ -62,25 +63,31 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
         [STAThread]
         [TestCase("IE")]
         [TestCase("FireFox")]
-        [Explicit]
-        public void TestJQueryInstallScript__loadsJQueryInCompatabilityMode(string browser)
+        public void JQueryInstallScript__loads_jQuery_in_compatability_mode(string browserType)
         {
-            Assert.Fail("not implemented");
-        }
+            UseBrowser(browserType);
 
-        [Test]
-        [Explicit]
-        public void Test_doesNotPutExistingjQueryIntoCompatibilityMode()
-        {
-            Assert.Fail("not implemented");
-        }
+            ScriptLoader loader = new ScriptLoader();
 
+            GoToResource("burger.htm");
+
+            // verify jQuery not loaded
+            Assert.AreEqual("undefined", Browser.Eval("typeof window.jQuery"));
+            Assert.AreEqual("undefined", Browser.Eval("typeof window.$"));
+
+            string js = loader.GetJQueryInstallScript();
+            Browser.RunScript(js);
+
+            // verify jQuery is loaded, but $ is still undefined
+            Assert.That(Browser.Eval("typeof window.jQuery"), Is.StringStarting("function"));
+            Assert.AreEqual("undefined", Browser.Eval("typeof window.$"));
+        }
 
         [Test]
         [STAThread]
         [TestCase("IE")]
         [TestCase("FireFox")]
-        public void TestGetCssMarkingScript_marksElements(string browserType)
+        public void GetCssMarkingScript_marks_elements(string browserType)
         {
             UseBrowser(browserType);
 
@@ -102,7 +109,7 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
         [STAThread]
         [TestCase("IE")]
         [TestCase("FireFox")]
-        public void TestGetCssMarkRemovalScript_unmarksElements(string browserType)
+        public void GetCssMarkRemovalScript_unmarks_elements(string browserType)
         {
             UseBrowser(browserType);
 

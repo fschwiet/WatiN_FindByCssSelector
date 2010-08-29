@@ -35,7 +35,7 @@ namespace WatiN.Core.Constraints.jQuerySelector
 
             result.Append(jQuery);
 
-            result.Append("};};");
+            result.Append("jQuery.noConflict();};};");
 
             return result.ToString(); 
         }

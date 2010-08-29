@@ -11,15 +11,26 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
         [STAThread]
         [TestCase("IE")]
         [TestCase("FireFox")]
-        public void TestFindByCss(string browserType)
+        public void FindByCssSelector_for_site_that_has_jQuery(string browserType)
         {
             UseBrowser(browserType);
 
             Browser.GoTo("http://allrecipes.com/");
             
-            Browser.Link(Find.ByClass("linkRequiresLogin")).WaitUntilExists(5);
-
             Browser.FindByCssSelector<Link>(".linkRequiresLogin").WaitUntilExists(5);
+        }
+
+        [Test]
+        [STAThread]
+        [TestCase("IE")]
+        [TestCase("FireFox")]
+        public void FindByCssSelector_for_site_that_does_not_have_jQuery(string browserType)
+        {
+            UseBrowser(browserType);
+
+            Browser.GoTo("http://google.com/");
+
+            Browser.FindByCssSelector<TextField>("#main form input[title='Google Search']").WaitUntilExists(5);
         }
     }
 }
