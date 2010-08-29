@@ -17,7 +17,7 @@ namespace WatiN.Core.Constraints.jQuerySelector
         {
             Assembly assembly = Assembly.GetAssembly(typeof(ScriptLoader));
 
-            string resourceName = assembly.GetName().Name + ".Resources." + name;
+            string resourceName = typeof(ScriptLoader).Namespace + ".Resources." + name;
 
             StreamReader reader = new StreamReader(assembly.GetManifestResourceStream(resourceName));
 

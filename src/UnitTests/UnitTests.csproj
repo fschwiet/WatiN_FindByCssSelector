@@ -189,6 +189,27 @@
     <Compile Include="ComponentExtensionsTests.cs" />
     <Compile Include="ElementOfTypeTests.cs" />
     <Compile Include="HtmlColorTests.cs" />
+    <Compile Include="jQuerySelectorTests\BrowserTestFixture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jQuerySelectorTests\CssSelectorConstraintTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jQuerySelectorTests\DomContainerUtilTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jQuerySelectorTests\MarkerConstraintTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jQuerySelectorTests\ScriptLoaderIntegrationTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jQuerySelectorTests\ScriptLoaderTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jQuerySelectorTests\Some.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PageTests.cs" />
     <Compile Include="DialogHandlerTests\CloseIEDialogHandlerTests.cs" />
     <Compile Include="DialogHandlerTests\DialogHandlerHelperTests.cs" />
@@ -440,6 +461,18 @@
     <Content Include="html\TestEvents.html" />
     <Content Include="html\theApp.html" />
     <Content Include="html\~^+{}[]%28%29.txt" />
+    <None Include="jQuerySelectorTests\html\burger.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="jQuerySelectorTests\html\cheeseburger.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="jQuerySelectorTests\html\MarkerConstraintTest.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="jQuerySelectorTests\html\veggieburger.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

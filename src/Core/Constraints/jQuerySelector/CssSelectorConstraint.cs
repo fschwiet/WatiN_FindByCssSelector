@@ -4,27 +4,29 @@ using WatiN.Core.Interfaces;
 
 namespace WatiN.Core.Constraints.jQuerySelector
 {
-    public class CssSelectorConstraint : WatiN.Core.Constraints.Constraint
+    public class CssSelectorConstraint : MarkerConstraint
     {
         private readonly DomContainer _domContainer;
         private readonly IScriptLoader _scriptLoader;
         private string _cssSelector;
-        private string _markerClass;
 
-        public virtual Constraint ActualConstraint { get; protected set; }
+        static int _cssMarkerIndex = 0;
 
         public CssSelectorConstraint(IScriptLoader scriptLoader, DomContainer domContainer)
+            : this(scriptLoader, domContainer, "findByCssMarker" + ++_cssMarkerIndex)
+        {
+        }
+
+        public CssSelectorConstraint(IScriptLoader scriptLoader, DomContainer domContainer, string markerClass) 
+            : base(markerClass)
         {
             _scriptLoader = scriptLoader;
             _domContainer = domContainer;
         }
 
-        public void Initialize(string cssSelector, string markerClass)
+        public void Initialize(string cssSelector)
         {
             _cssSelector = cssSelector;
-            _markerClass = markerClass;
-
-            ActualConstraint = new MarkerConstraint(markerClass);
         }
 
         public override void WriteDescriptionTo(TextWriter writer)
@@ -37,30 +39,17 @@ namespace WatiN.Core.Constraints.jQuerySelector
             var jqInstallScript = _scriptLoader.GetJQueryInstallScript();
             _domContainer.Eval(jqInstallScript);
 
-            var markingScript = _scriptLoader.GetCssMarkingScript(_cssSelector, _markerClass);
+            var markingScript = _scriptLoader.GetCssMarkingScript(_cssSelector, base.MarkerClass);
             _domContainer.Eval(markingScript);
 
             base.EnterMatch();
-            //ActualConstraint.EnterMatch();
-        }
-
-        /*
-        protected override bool MatchesImpl(IAttributeBag attributeBag, ConstraintContext context)
-        {
-            return ActualConstraint.MatchesImpl(attributeBag, context);
-        }
-        */
-        protected override bool MatchesImpl(IAttributeBag attributeBag, ConstraintContext context)
-        {
-            return false;
         }
 
         protected override void ExitMatch()
         {
             base.ExitMatch();
-            //ActualConstraint.ExitMatch();
 
-            var unmarkingScript = _scriptLoader.GetCssMarkRemovalScript(_cssSelector, _markerClass);
+            var unmarkingScript = _scriptLoader.GetCssMarkRemovalScript(_cssSelector, base.MarkerClass);
             _domContainer.Eval(unmarkingScript);
 
         }
