@@ -45,9 +45,15 @@ namespace WatiN.Core.Constraints.jQuerySelector
             //ActualConstraint.EnterMatch();
         }
 
+        /*
         protected override bool MatchesImpl(IAttributeBag attributeBag, ConstraintContext context)
         {
             return ActualConstraint.MatchesImpl(attributeBag, context);
+        }
+        */
+        protected override bool MatchesImpl(IAttributeBag attributeBag, ConstraintContext context)
+        {
+            return false;
         }
 
         protected override void ExitMatch()
