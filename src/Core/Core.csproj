@@ -185,7 +185,7 @@
     <Compile Include="Body.cs" />
     <Compile Include="Constraints\jQuerySelector\CssSelectorConstraint.cs" />
     <Compile Include="Constraints\jQuerySelector\DomContainerUtil.cs" />
-    <Compile Include="Constraints\jQuerySelector\MarkerConstraint.cs" />
+    <Compile Include="Constraints\jQuerySelector\CssClassConstraint.cs" />
     <Compile Include="Constraints\jQuerySelector\ScriptLoader.cs" />
     <Compile Include="DescriptionAttribute.cs" />
     <Compile Include="Exceptions\ElementExceptionBase.cs" />

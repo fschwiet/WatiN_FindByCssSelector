@@ -4,7 +4,7 @@ using WatiN.Core.Interfaces;
 
 namespace WatiN.Core.Constraints.jQuerySelector
 {
-    public class CssSelectorConstraint : MarkerConstraint
+    public class CssSelectorConstraint : CssClassConstraint
     {
         private readonly DomContainer _domContainer;
         private readonly IScriptLoader _scriptLoader;
@@ -39,7 +39,7 @@ namespace WatiN.Core.Constraints.jQuerySelector
             var jqInstallScript = _scriptLoader.GetJQueryInstallScript();
             _domContainer.Eval(jqInstallScript);
 
-            var markingScript = _scriptLoader.GetCssMarkingScript(_cssSelector, base.MarkerClass);
+            var markingScript = _scriptLoader.GetCssMarkingScript(_cssSelector, base.ExpectedCssClass);
             _domContainer.Eval(markingScript);
 
             base.EnterMatch();
@@ -49,7 +49,7 @@ namespace WatiN.Core.Constraints.jQuerySelector
         {
             base.ExitMatch();
 
-            var unmarkingScript = _scriptLoader.GetCssMarkRemovalScript(_cssSelector, base.MarkerClass);
+            var unmarkingScript = _scriptLoader.GetCssMarkRemovalScript(_cssSelector, base.ExpectedCssClass);
             _domContainer.Eval(unmarkingScript);
 
         }

@@ -6,7 +6,7 @@ using WatiN.Core.Constraints.jQuerySelector;
 namespace WatiN.Core.UnitTests.jQuerySelectorTests
 {
     [TestFixture]
-    class MarkerConstraintTest : BrowserTestFixture
+    class CssClassConstraintTest : BrowserTestFixture
     {
         [Test]
         [STAThread]
@@ -18,9 +18,9 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
 
             ScriptLoader loader = new ScriptLoader();
 
-            GoToResource("MarkerConstraintTest.htm");
+            GoToResource("CssClassConstraintTest.htm");
 
-            Browser.Element(Find.ById("first").And(new MarkerConstraint("marker"))).WaitUntilExists(5);
+            Browser.Element(Find.ById("first").And(new CssClassConstraint("marker"))).WaitUntilExists(5);
         }
 
         [Test]
@@ -33,9 +33,9 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
 
             ScriptLoader loader = new ScriptLoader();
 
-            GoToResource("MarkerConstraintTest.htm");
+            GoToResource("CssClassConstraintTest.htm");
 
-            Browser.Element(Find.ById("second").And(new MarkerConstraint("marker"))).WaitUntilExists(5);
+            Browser.Element(Find.ById("second").And(new CssClassConstraint("marker"))).WaitUntilExists(5);
         }
 
         [Test]
@@ -48,9 +48,9 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
 
             ScriptLoader loader = new ScriptLoader();
 
-            GoToResource("MarkerConstraintTest.htm");
+            GoToResource("CssClassConstraintTest.htm");
 
-            Browser.Element(Find.ById("third").And(new MarkerConstraint("marker"))).WaitUntilExists(5);
+            Browser.Element(Find.ById("third").And(new CssClassConstraint("marker"))).WaitUntilExists(5);
         }
 
         [Test]
@@ -63,9 +63,9 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
 
             ScriptLoader loader = new ScriptLoader();
 
-            GoToResource("MarkerConstraintTest.htm");
+            GoToResource("CssClassConstraintTest.htm");
 
-            Browser.Element(Find.ById("fourth").And(new MarkerConstraint("marker"))).WaitUntilExists(5);
+            Browser.Element(Find.ById("fourth").And(new CssClassConstraint("marker"))).WaitUntilExists(5);
         }
         [Test]
         [STAThread]
@@ -77,13 +77,13 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
 
             ScriptLoader loader = new ScriptLoader();
 
-            GoToResource("MarkerConstraintTest.htm");
+            GoToResource("CssClassConstraintTest.htm");
 
             Thread.Sleep(TimeSpan.FromSeconds(5).Milliseconds);
 
-            Browser.Element(Find.ById("notmatch_1").And(new MarkerConstraint("marker").Not())).WaitUntilExists(5);
-            Browser.Element(Find.ById("notmatch_2").And(new MarkerConstraint("marker").Not())).WaitUntilExists(5);
-            Browser.Element(Find.ById("notmatch_3").And(new MarkerConstraint("marker").Not())).WaitUntilExists(5);
+            Browser.Element(Find.ById("notmatch_1").And(new CssClassConstraint("marker").Not())).WaitUntilExists(5);
+            Browser.Element(Find.ById("notmatch_2").And(new CssClassConstraint("marker").Not())).WaitUntilExists(5);
+            Browser.Element(Find.ById("notmatch_3").And(new CssClassConstraint("marker").Not())).WaitUntilExists(5);
         }
     }
 }

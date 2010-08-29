@@ -198,7 +198,7 @@
     <Compile Include="jQuerySelectorTests\DomContainerUtilTest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="jQuerySelectorTests\MarkerConstraintTest.cs">
+    <Compile Include="jQuerySelectorTests\CssClassConstraintTest.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="jQuerySelectorTests\ScriptLoaderIntegrationTests.cs">
@@ -467,7 +467,7 @@
     <None Include="jQuerySelectorTests\html\cheeseburger.htm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="jQuerySelectorTests\html\MarkerConstraintTest.htm">
+    <None Include="jQuerySelectorTests\html\CssClassConstraintTest.htm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="jQuerySelectorTests\html\veggieburger.htm">

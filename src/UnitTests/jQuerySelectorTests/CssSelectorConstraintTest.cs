@@ -45,7 +45,7 @@ namespace WatiN.Core.UnitTests.jQuerySelectorTests
 
             var sut = new CssSelectorConstraint(null, null, expectedMarker);
 
-            Assert.That(sut.MarkerClass, Is.EqualTo(expectedMarker));
+            Assert.That(sut.ExpectedCssClass, Is.EqualTo(expectedMarker));
         }
 
         [Test]
