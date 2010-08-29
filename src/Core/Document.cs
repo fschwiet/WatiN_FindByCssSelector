@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using WatiN.Core.Constraints;
+using WatiN.Core.Constraints.jQuerySelector;
 using WatiN.Core.Exceptions;
 using WatiN.Core.Native;
 using WatiN.Core.UtilityClasses;
@@ -657,6 +658,13 @@ namespace WatiN.Core
         public virtual ElementCollection<TElement> ElementsOfType<TElement>() where TElement : Element
         {
             return All.ElementsOfType<TElement>();
+        }
+
+        public TElement FindByCssSelector<TElement>(string cssSelector) where TElement : Element
+        {
+            var constraint = new CssSelectorConstraint(new ScriptLoader(), domContainer);
+            constraint.Initialize(cssSelector);
+            return All.ElementOfType<TElement>(constraint);
         }
 
         public virtual FileUpload FileUpload(string elementId)

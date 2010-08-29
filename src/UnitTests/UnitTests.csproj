@@ -195,7 +195,7 @@
     <Compile Include="jQuerySelectorTests\CssSelectorConstraintTest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="jQuerySelectorTests\DomContainerUtilTest.cs">
+    <Compile Include="jQuerySelectorTests\FindByCssSelectorTest.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="jQuerySelectorTests\CssClassConstraintTest.cs">
